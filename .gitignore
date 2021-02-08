@@ -106,3 +106,7 @@ dist
 package-lock.json
 storybook-static/
 .idea/
+static/
+dist/
+loader/
+www/

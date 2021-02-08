@@ -1,0 +1,99 @@
+:host {
+  box-sizing: border-box !important; /* set this to important because of common box-sizing selector `*, *:before, *:after` in the global scope */
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--color-claire);
+}
+
+:host(:empty) {
+  display: none;
+}
+
+:host(.pax-color--success) {
+  background-color: var(--color-vert10);
+}
+
+:host(.pax-color--warning) {
+  background-color: var(--color-orange10);
+}
+
+:host(.pax-color--danger) {
+  background-color: var(--color-rouge10);
+}
+
+.message-strip-body {
+  padding: 5px 0;
+  font-size: 16px;
+  line-height: 1.375em;
+  color: var(--color-noir);
+}
+
+.message-strip-icon {
+  display: block;
+  flex-shrink: 0;
+  width: 50px;
+  height: 30px;
+}
+
+.message-strip-icon svg {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin-right: auto;
+}
+
+.message-strip-icon path.circle {
+  fill: var(--color-prune);
+}
+
+/* info icon */
+
+:host(.message-strip-icon--info) .message-strip-icon circle.bg {
+  fill: var(--color-prune);
+}
+
+:host(.message-strip-icon--info) .message-strip-icon path.icon {
+  fill: var(--color-white);
+}
+
+/* success icon */
+
+:host(.message-strip-icon--success) .message-strip-icon circle.bg {
+  fill: var(--color-vert);
+}
+
+:host(.message-strip-icon--success) .message-strip-icon path.icon {
+  fill: var(--color-white);
+}
+
+/* warning icon */
+
+:host(.message-strip-icon--warning) .message-strip-icon circle.bg {
+  fill: var(--color-orange);
+}
+
+:host(.message-strip-icon--warning) .message-strip-icon path.icon {
+  fill: var(--color-white);
+}
+
+:host(.message-strip-icon--warning) .message-strip-icon path.exclamation-line {
+  fill: none;
+  stroke: var(--color-white);
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+:host(.message-strip-icon--warning) .message-strip-icon path.exclamation-dot {
+  fill: var(--color-white);
+}
+
+/* danger icon */
+
+:host(.message-strip-icon--danger) .message-strip-icon circle.bg {
+  fill: var(--color-red-2);
+}
+
+:host(.message-strip-icon--danger) .message-strip-icon path.icon {
+  fill: var(--color-white);
+}

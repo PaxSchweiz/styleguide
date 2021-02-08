@@ -1,0 +1,61 @@
+@import "pax.css";
+:root {
+
+  --bp-md: 800px;
+  --bp-lg: 1200px;
+
+  --border-radius: 2px;
+
+  --box-shadow: 0 2px 6px 0 #3b3a5340;
+
+  --color-claire: var(--pax_claire);
+  --color-vert: var(--pax_vert);
+  --color-vert-hover: var(--pax_vertfonce);
+  --color-vert10: rgba(243, 250, 230, 1);   /* #F3FAE6 */
+  --color-gris5: rgba(238, 238, 238, 1);    /* #EEEEEE */
+  --color-gris10: rgba(237, 237, 237, 1);   /* #EDEDED */
+  --color-gris15: rgba(227, 227, 227, 1);   /* #E3E3E3 */
+  --color-gris20: rgba(217, 218, 219, 1);   /* #D9DADB */
+  --color-gris30: rgba(198, 198, 198, 1);   /* #C6C6C6 */
+  --color-gris45: var(--pax_gris45);
+  --color-gris60: var(--pax_gris60);
+  --color-gris77: var(--pax_gris77);
+  --color-gris: var(--pax_gris);
+  --color-noir: var(--pax_prunenoir);
+  --color-orange: var(--pax_orange);
+  --color-orange10: rgba(253, 239, 209, 1); /* #FDEFD1 */
+  --color-prune: var(--pax_prune);
+  --color-red-2: rgba(200, 32, 59, 1);      /* #C8203B */
+  --color-rouge: var(--pax_rouge100);
+  --color-rouge10: rgba(245, 231, 234, 1);  /* #F5E7EA */
+  --color-rouge40: var(--pax_rouge40);
+  --color-rouge85: var(--pax_rouge85);
+  --color-white: var(--pax_white);
+  --color-white20: rgba(98, 97, 117, 1);    /* #626175 */
+
+  --font-base-size: 16px;
+  --font-base-size-min: var(--font-base-size);
+  --font-base-size-max: 18px;
+  --font-base-line-height: 1.3em;
+  --font-input-size: 16px;
+  --font-input-line-height: 1.375em;
+  --font-family-myriad-pro: 'myriad-pro', sans-serif;
+  --font-family-fontello: 'Fontello-Pax'; /* icon font */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-style-italic: italic;
+
+  --grid-bp-s: 37.5rem; /* 600px */
+  --grid-bp-m: 50rem; /* 800px */
+  --grid-width-max: 58.75rem; /* 940px */
+
+  --transition-duration: 0.1s;
+  --transition-timing-function: ease-in-out;
+
+  --z-index-item-input: 2;
+  --z-index-item-anchor: 3;
+  --z-index-item-overlay: 4;
+
+}

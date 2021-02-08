@@ -1,0 +1,8 @@
+:host {
+    box-sizing: border-box !important; /* set this to important because of common box-sizing selector `*, *:before, *:after` in the global scope */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,323 @@
+:host {
+  box-sizing: border-box !important; /* set this to important because of common box-sizing selector `*, *:before, *:after` in the global scope */
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 9px 40px 8px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-gris77);
+  font-size: 16px;
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.375em;
+  color: var(--color-noir);
+  outline: none;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: -9px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: var(--color-prune);
+}
+
+.toggle:hover {
+  color: var(--color-vert);
+}
+
+.icon-cal {
+  display: block;
+  width: 19px;
+  height: 40px;
+  fill: currentColor;
+}
+
+.picker {
+  width: 256px;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  padding: 0.5rem 0 1rem 0;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: var(--z-index-item-overlay);
+}
+
+.action-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 0.5rem 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.action-bar .mode-title {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-white);
+  padding: 0.625rem 0 0.6875rem 0;
+  border: none;
+  color: var(--color-vert);
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-semibold);
+  font-size: 12px;
+  line-height: 2em;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.action-bar .icon-dropdown {
+  width: 11px;
+  height: 6px;
+  margin-left: 0.75rem;
+  fill: var(--color-prune);
+}
+
+.action-bar .is-active {
+  transform: rotate(180deg);
+}
+
+.action-bar .mode-title:hover .icon-dropdown {
+  fill: var(--color-vert);
+}
+
+.action-bar .prev {
+  margin-left: auto;
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: var(--color-prune);
+}
+
+.action-bar .prev:hover {
+  color: var(--color-vert);
+}
+
+.action-bar .icon-prev {
+  width: 6px;
+  height: 11px;
+  fill: currentColor;
+}
+
+.action-bar .next {
+  margin-left: 0.5rem;
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: var(--color-prune);
+}
+
+.action-bar .next:hover {
+  color: var(--color-vert);
+}
+
+.action-bar .icon-next {
+  width: 6px;
+  height: 11px;
+  fill: currentColor;
+}
+
+.weekdays {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.weekdays > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 2px solid transparent;
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-bold);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.dates,
+.months,
+.years {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.dates > li,
+.months > li,
+.years > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  position: relative;
+  font-family: var(--font-family-myriad-pro);
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-gris77);
+}
+
+.months > li,
+.years > li {
+  width: 3.25rem;
+}
+
+.dates > li:hover,
+.months > li:hover,
+.years > li:hover {
+  color: var(--color-prune);
+}
+
+.dates > li.selected {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+}
+
+.dates > li:after,
+.months > li:after,
+.years > li:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  z-index: -1;
+  border-radius: 28px; /* same as height of radio button */
+}
+
+.dates > li:hover:after,
+.months > li:hover:after,
+.years > li:hover:after {
+  background-color: var(--color-vert10);
+}
+
+.dates > li.today:after,
+.months > li.today:after,
+.years > li.today:after {
+  border: 1px solid var(--color-vert);
+}
+
+.dates > li.selected:after {
+  background-color: var(--color-vert);
+}
+
+.months > li.selected:after,
+.years > li.selected:after {
+  background-color: var(--color-vert10);
+}
+
+.dates > li.padder {
+  color: var(--color-gris30);
+}
+
+.error-message {
+  margin-top: 0.1em;
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-regular);
+  font-size: 13px;
+  color: var(--color-rouge);
+}
+
+
+/* DISABLED ----------------------------------------------------------------- */
+
+
+:host([disabled]) input {
+  border-bottom-color: var(--color-noir);
+  color: var(--color-gris45);
+  cursor: default;
+}
+
+:host([disabled]) .toggle {
+  color: var(--color-gris45);
+  cursor: default;
+}
+
+
+/* READONLY ----------------------------------------------------------------- */
+
+
+:host([readonly]) input {
+  border-bottom-color: var(--color-gris);
+  color: var(--color-gris);
+  cursor: text;
+}
+
+:host([readonly]) .toggle {
+  fill: var(--color-gris);
+  cursor: default;
+}
+
+:host([readonly]) .toggle:hover {
+  color: var(--color-gris);
+}
+
+
+/* INVALID ------------------------------------------------------------------ */
+
+
+:host([invalid]) input {
+  padding-bottom: 7px;
+  border-bottom-color: var(--color-rouge);
+  border-bottom-width: 2px;
+}
+
+
+/* HOVER/FOCUS -------------------------------------------------------------- */
+
+
+:host(:not([readonly]):not([disabled]).has-focus) input {
+  padding-bottom: 7px;
+  border-bottom-color: var(--color-vert);
+  border-bottom-width: 2px;
+}
+
+
+/* WITHIN ITEM COMPOSITION -------------------------------------------------- */
+
+
+:host-context(pax-item) input {
+  background-color: transparent;
+}
+
+:host-context(pax-item.item-has-focus):host(:not([readonly]):not([disabled]):not([invalid])) input,
+:host-context(pax-item:hover):host(:not([readonly]):not([disabled]):not([invalid])) input {
+  border-bottom-color: var(--color-vert);
+}

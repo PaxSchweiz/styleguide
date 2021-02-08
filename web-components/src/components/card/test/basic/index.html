@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Card - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-grid>
+      <pax-row>
+        <pax-col>
+          <pax-headline>Card - Basic</pax-headline>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col col-sm-6>
+          <pax-card>Standard</pax-card>
+        </pax-col>
+        <pax-col col-sm-6>
+          <pax-card border="light">Light Border</pax-card>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col col-sm-6>
+          <pax-card border="dark">Dark Border</pax-card>
+        </pax-col>
+        <pax-col col-sm-6>
+          <pax-card border="success">Success Border</pax-card>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col col-sm-6>
+          <pax-card border="warning">Warning Border</pax-card>
+        </pax-col>
+        <pax-col col-sm-6>
+          <pax-card border="danger">Danger Border</pax-card>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col col-sm-6>
+          <pax-card border="light" header="Header">Standard</pax-card>
+        </pax-col>
+        <pax-col col-sm-6>
+          <pax-card border="light" header="Prämiendepot & Szenarien">
+            <pax-list lines>
+              <pax-item>Unwiderrufliches Prämiendepot</pax-item>
+              <pax-item>Verfügbares Prämiendepot<b slot="end">17’797,00 CHF</b></pax-item>
+              <pax-item>Letztjähriges Prämiendepot<b slot="end">234’567,89 CHF</b></pax-item>
+              <pax-item>Zukünftiges Prämiendepot<b slot="end">335’512,01 CHF</b></pax-item>
+              <pax-item>Überschussystem<b slot="end">Reduktion der Prämie</b></pax-item>
+            </pax-list>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+  
+  </body>
+
+</html>

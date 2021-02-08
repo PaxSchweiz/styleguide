@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Checkbox - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <form action="">
+      <pax-headline level="1">Checkbox - Basic</pax-headline>
+      <pax-grid>
+        <pax-row>
+          <pax-col>
+            <pax-checkbox></pax-checkbox>
+            <p>Checked:</p>
+            <pax-checkbox checked></pax-checkbox>
+            <p>Disabled:</p>
+            <pax-checkbox disabled></pax-checkbox>
+            <p>with custom name:</p>
+            <pax-checkbox name="with-hidden-input"></pax-checkbox>
+            <p>with custom name and custom value:</p>
+            <pax-checkbox name="with-hidden-input" value="with-custom-value"></pax-checkbox>
+          </pax-col>
+        </pax-row>
+      </pax-grid>
+    </form>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Datepicker - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-headline level="1">Datepicker - Basic</pax-headline>
+    <pax-grid>
+      <pax-row>
+        <pax-col col-md-6 col-lg-3>
+          <pax-datepicker></pax-datepicker>
+          <p>with value:</p>
+          <pax-datepicker value="01.01.2021"></pax-datepicker>
+          <p>with invalid initial value:</p>
+          <pax-datepicker value="01-01-2021"></pax-datepicker>
+          <p>disabled:</p>
+          <pax-datepicker disabled></pax-datepicker>
+          <p>readonly:</p>
+          <pax-datepicker readonly value="01.01.2021"></pax-datepicker>
+          <p>with locale 'fr':</p>
+          <pax-datepicker locale="fr"></pax-datepicker>
+          <p>with locale 'it':</p>
+          <pax-datepicker locale="it"></pax-datepicker>
+          <p>invalid:</p>
+          <pax-datepicker invalid></pax-datepicker>
+          <p>invalid with error message:</p>
+          <pax-datepicker invalid error="Error message"></pax-datepicker>
+        </pax-col>
+        <pax-col col-md-6 col-lg-3>
+        </pax-col>
+        <pax-col col-md-6 col-lg-3>
+        </pax-col>
+        <pax-col col-md-6 col-lg-3>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

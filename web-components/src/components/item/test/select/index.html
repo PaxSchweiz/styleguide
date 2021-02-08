@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Item - Selects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-headline level="1">Item - Selects</pax-headline>
+    <pax-headline level="2">Floating Labels</pax-headline>
+    <pax-grid>
+      <pax-row>
+        <pax-col col-md-6>
+          <h3>Default</h3>
+          <form action="">
+            <pax-item>
+              <pax-label for="default-floating" position="floating">Label</pax-label>
+              <pax-select id="default-floating">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-long-label" position="floating">With label, truncated, therefore we need a longer value, that really stretches very very very long</pax-label>
+              <pax-select id="default-floating-long-label">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-prefilled" position="floating">Prefilled</pax-label>
+              <pax-select id="default-floating-prefilled">
+                <pax-select-option value="1" selected>Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-disabled" position="floating">Disabled</pax-label>
+              <pax-select disabled id="default-floating-disabled">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-disabled-prefilled" position="floating">Disabled and Prefilled</pax-label>
+              <pax-select disabled id="default-floating-disabled-prefilled">
+                <pax-select-option value="1" selected>Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-readonly-prefilled" position="floating">Readonly</pax-label>
+              <pax-select readonly id="default-floating-readonly-prefilled">
+                <pax-select-option value="1" selected>Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-invalid" position="floating">Label</pax-label>
+              <pax-select invalid id="default-floating-invalid">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-invalid-with-error-msg" position="floating">Label</pax-label>
+              <pax-select invalid error="Error message" id="default-floating-invalid-with-error-msg">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <br>
+            <button type="submit">Submit</button>
+          </form>
+        </pax-col>
+        <pax-col col-md-6>
+          <h3>Required</h3>
+          <form action="">
+            <pax-item>
+              <pax-label required for="required-floating" position="floating">Label</pax-label>
+              <pax-select id="required-floating">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-long-label" position="floating">With label, truncated, therefore we need a longer value, that really stretches very very very long</pax-label>
+              <pax-select id="required-floating-long-label">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-prefilled" position="floating">Prefilled</pax-label>
+              <pax-select id="required-floating-prefilled">
+                <pax-select-option value="1" selected>Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-disabled" position="floating">Disabled</pax-label>
+              <pax-select disabled id="required-floating-disabled">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-disabled-prefilled" position="floating">Disabled and Prefilled</pax-label>
+              <pax-select disabled id="required-floating-disabled-prefilled">
+                <pax-select-option value="1" selected>Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-readonly-prefilled" position="floating">Readonly</pax-label>
+              <pax-select readonly id="required-floating-readonly-prefilled">
+                <pax-select-option value="1" selected>Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-invalid" position="floating">Label</pax-label>
+              <pax-select invalid id="required-floating-invalid">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-invalid-with-error-msg" position="floating">Label</pax-label>
+              <pax-select invalid error="Error message" id="required-floating-invalid-with-error-msg">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <br>
+            <button type="submit">Submit</button>
+          </form>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+    <pax-headline level="2">Stacked Labels</pax-headline>
+    <pax-grid>
+      <pax-row>
+        <pax-col col-md-6>
+          <h3>Default</h3>
+          <form action="">
+            <pax-item>
+              <pax-label for="default">Label</pax-label>
+              <pax-select id="default">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-long-label">With label, truncated, therefore we need a longer value, that really stretches very very very long</pax-label>
+              <pax-select id="default-long-label">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label wrap for="default-long-label-wrap">With label, wrap, therefore we need a longer value, that really stretches very very very long</pax-label>
+              <pax-select id="default-long-label-wrap">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-prefilled">Prefilled</pax-label>
+              <pax-select id="default-prefilled">
+                <pax-select-option value="1" selected>Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-disabled">Disabled</pax-label>
+              <pax-select disabled id="default-disabled">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-disabled-prefilled">Disabled and Prefilled</pax-label>
+              <pax-select disabled id="default-disabled-prefilled">
+                <pax-select-option value="1" selected>Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-readonly-prefilled">Readonly</pax-label>
+              <pax-select readonly id="default-readonly-prefilled">
+                <pax-select-option value="1" selected>Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-invalid">Label</pax-label>
+              <pax-select invalid id="default-invalid">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-invalid-with-error-msg">Label</pax-label>
+              <pax-select invalid error="Error message" id="default-invalid-with-error-msg">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <br>
+            <button type="submit">Submit</button>
+          </form>
+        </pax-col>
+        <pax-col col-md-6>
+          <h3>Required</h3>
+          <form action="">
+            <pax-item>
+              <pax-label required for="required">Label</pax-label>
+              <pax-select id="required">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-long-label">With label, truncated, therefore we need a longer value, that really stretches very very very long</pax-label>
+              <pax-select id="required-long-label">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label required wrap for="required-long-label-wrap">With label, wrap, therefore we need a longer value, that really stretches very very very long</pax-label>
+              <pax-select id="required-long-label-wrap">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-prefilled">Prefilled</pax-label>
+              <pax-select id="required-prefilled">
+                <pax-select-option value="1" selected>Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-disabled">Disabled</pax-label>
+              <pax-select disabled id="required-disabled">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-disabled-prefilled">Disabled and Prefilled</pax-label>
+              <pax-select disabled id="required-disabled-prefilled">
+                <pax-select-option value="1" selected>Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-readonly-prefilled">Readonly</pax-label>
+              <pax-select readonly id="required-readonly-prefilled">
+                <pax-select-option value="1" selected>Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-invalid">Label</pax-label>
+              <pax-select invalid id="required-invalid">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-invalid-with-error-msg">Label</pax-label>
+              <pax-select invalid error="Error message" id="required-invalid-with-error-msg">
+                <pax-select-option value="1">Option 1</pax-select-option>
+                <pax-select-option value="2" disabled>Option 2</pax-select-option>
+                <pax-select-option value="3">Option 3</pax-select-option>
+              </pax-select>
+            </pax-item>
+            <br>
+            <button type="submit">Submit</button>
+          </form>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-message-strip icon="info">See console for submit events.</pax-message-strip>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const forms = document.querySelectorAll('form');
+        forms.forEach(form => {
+          form.addEventListener('submit', evt => {
+            evt.stopPropagation();
+            evt.preventDefault();
+            console.log(evt);
+            return false;
+          })
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

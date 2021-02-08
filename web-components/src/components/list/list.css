@@ -1,0 +1,19 @@
+pax-list {
+  display: block;
+  contain: content;
+  list-style-type: none;
+  border-top: 1px solid transparent;
+}
+
+/* Optionally add spacing around a list when the `inset` attribute is set */
+
+pax-list.list-inset {
+  padding: 8px 10px;
+}
+
+/* Optionally inline layout when the `inline` attribute is set */
+
+pax-list.list-inline {
+  display: flex;
+  flex-wrap: wrap;
+}

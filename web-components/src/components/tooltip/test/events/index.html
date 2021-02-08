@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Tooltip - Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-headline level="h1">Tooltip - Events</pax-headline>
+    <pax-grid>
+      <pax-row>
+        <pax-col>
+          <pax-label>
+            Pax label
+            <pax-tooltip id="tooltip" slot="end" closable>
+              Just my luck, no ice. Is this my <pax-link href="#">espresso machine</pax-link>? Wh-what is-h-how did you get my espresso machine? I gave it a cold? I gave it a virus. A computer virus. I was part of something special. Must go faster. God help us, we're in the hands of engineers.
+            </pax-tooltip>
+          </pax-label>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-message-strip icon="info">See console for for each custom event and the tooltip open state: `beforeOpen`, `afterOpen`, `beforeClose`, and `afterClose`.</pax-message-strip>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        var tooltip = document.getElementById('tooltip');
+
+        tooltip.addEventListener('beforeOpen', function () {
+          console.log('beforeOpen was emitted');
+          console.log('tooltip has `open` attribute: ' + tooltip.hasAttribute('open'));
+        });
+
+        tooltip.addEventListener('afterOpen', function () {
+          console.log('afterOpen was emitted');
+          console.log('tooltip has `open` attribute: ' + tooltip.hasAttribute('open'));
+        });
+
+        tooltip.addEventListener('beforeClose', function () {
+          console.log('beforeClose was emitted');
+          console.log('tooltip has `open` attribute: ' + tooltip.hasAttribute('open'));
+        });
+
+        tooltip.addEventListener('afterClose', function () {
+          console.log('afterClose was emitted');
+          console.log('tooltip has `open` attribute: ' + tooltip.hasAttribute('open'));
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

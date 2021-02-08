@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Radio - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-grid>
+      <pax-row>
+        <pax-col>
+          <pax-headline>Radio - Basic</pax-headline>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-radio></pax-radio>
+          <p>Disabled:</p>
+          <pax-radio disabled></pax-radio>
+          <p>with value:</p>
+          <pax-radio value="with-value"></pax-radio>
+          </pax-item>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

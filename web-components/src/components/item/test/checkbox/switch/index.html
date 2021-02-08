@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Item - Checkbox: Switch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+  <link href="../../../../../../dist/pax/pax.css" rel="stylesheet">
+  <script nomodule src="../../../../../../dist/pax.js"></script>
+  <script type="module" src="../../../../../../dist/pax/pax.esm.js"></script>
+</head>
+
+<body>
+<pax-headline level="1">Item - Checkbox: Switch</pax-headline>
+<pax-grid>
+  <pax-row>
+    <pax-col col-md-6>
+      <pax-headline level="3">Default with inline layout</pax-headline>
+      <form action="">
+        <pax-list inline>
+          <pax-item>
+            <pax-checkbox icon="switch" id="default" name="default" slot="start"></pax-checkbox>
+            <pax-label for="default">Label</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" checked id="default-checked" name="default-checked" slot="start"></pax-checkbox>
+            <pax-label for="default-checked">Checked</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" disabled id="default-disabled" name="default-disabled" slot="start"></pax-checkbox>
+            <pax-label for="default-disabled" disabled>Disabled</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" id="default-truncated" name="default-truncated" slot="start"></pax-checkbox>
+            <pax-label for="default-truncated">Label with a long text that will be truncated</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" id="default-wrap" name="default-wrap" slot="start"></pax-checkbox>
+            <pax-label for="default-wrap" wrap>Label with a long text that will wrap to the next line</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" id="default-link" name="default-link" slot="start"></pax-checkbox>
+            <pax-label for="default-link">Label with <pax-link href="https://re-lounge.com" target="_blank">link</pax-link></pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" value="custom-value" id="default-custom-value" name="default-custom-value" slot="start"></pax-checkbox>
+            <pax-label for="default-custom-value">Custom Value</pax-label>
+          </pax-item>
+        </pax-list>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </pax-col>
+    <pax-col col-md-6>
+      <pax-headline level="3">Required with inline layout</pax-headline>
+      <form action="">
+        <pax-list inline>
+          <pax-item>
+            <pax-checkbox icon="switch" id="required" name="required" slot="start"></pax-checkbox>
+            <pax-label required for="required">Standard</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" checked id="required-checked" name="required-checked" slot="start"></pax-checkbox>
+            <pax-label required for="required-checked">Checked</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" disabled id="required-disabled" name="required-disabled" slot="start"></pax-checkbox>
+            <pax-label required for="required-disabled">Disabled</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" id="required-truncated" name="required-truncated" slot="start"></pax-checkbox>
+            <pax-label required for="required-truncated">Label with a long text that will be truncated</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" id="required-wrap" name="required-wrap" slot="start"></pax-checkbox>
+            <pax-label required for="required-wrap" wrap>Label with a long text that will wrap to the next line</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" id="required-link" name="required-link" slot="start"></pax-checkbox>
+            <pax-label required for="required-link">Label with <pax-link href="https://re-lounge.com" target="_blank">link</pax-link></pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" value="custom-value" id="required-custom-value" name="required-custom-value" slot="start"></pax-checkbox>
+            <pax-label required for="required-custom-value">Custom Value</pax-label>
+          </pax-item>
+        </pax-list>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </pax-col>
+    <pax-col col-md-6>
+      <pax-headline level="3">Default with listing layout</pax-headline>
+      <form action="">
+        <pax-list>
+          <pax-item>
+            <pax-checkbox icon="switch" id="default-listing" name="default-listing" slot="start"></pax-checkbox>
+            <pax-label for="default-listing">Label</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" checked id="default-listing-checked" name="default-listing-checked" slot="start"></pax-checkbox>
+            <pax-label for="default-listing-checked">Checked</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" disabled id="default-listing-disabled" name="default-listing-disabled" slot="start"></pax-checkbox>
+            <pax-label for="default-listing-disabled" disabled>Disabled</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" id="default-listing" name="default-listing" slot="start"></pax-checkbox>
+            <pax-label for="default-listing">Label with a long text that will be truncated</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" id="default-listing" name="default-listing" slot="start"></pax-checkbox>
+            <pax-label for="default-listing" wrap>Label with a long text that will wrap to the next line</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" id="default-listing-link" name="default-listing-link" slot="start"></pax-checkbox>
+            <pax-label for="default-listing-link">Label with <pax-link href="https://re-lounge.com" target="_blank">link</pax-link></pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" value="custom-value" id="default-listing-custom-value" name="default-listing-custom-value" slot="start"></pax-checkbox>
+            <pax-label for="default-listing-custom-value">Custom Value</pax-label>
+          </pax-item>
+        </pax-list>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </pax-col>
+    <pax-col col-md-6>
+      <pax-headline level="3">Required with listing layout</pax-headline>
+      <form action="">
+        <pax-list>
+          <pax-item>
+            <pax-checkbox icon="switch" id="required-listing" name="required-listing" slot="start"></pax-checkbox>
+            <pax-label required for="required-listing">Label</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" checked id="required-listing-checked" name="required-listing-checked" slot="start"></pax-checkbox>
+            <pax-label required for="required-listing-checked">Checked</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" disabled id="required-listing-disabled" name="required-listing-disabled" slot="start"></pax-checkbox>
+            <pax-label required for="required-listing-disabled" disabled>Disabled</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" id="required-listing" name="required-listing" slot="start"></pax-checkbox>
+            <pax-label required for="required-listing">Label with a long text that will be truncated</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" id="required-listing" name="required-listing" slot="start"></pax-checkbox>
+            <pax-label required for="required-listing" wrap>Label with a long text that will wrap to the next line</pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" id="required-listing-link" name="required-listing-link" slot="start"></pax-checkbox>
+            <pax-label required for="required-listing-link">Label with <pax-link href="https://re-lounge.com" target="_blank">link</pax-link></pax-label>
+          </pax-item>
+          <pax-item>
+            <pax-checkbox icon="switch" value="custom-value" id="required-listing-custom-value" name="required-listing-custom-value" slot="start"></pax-checkbox>
+            <pax-label for="required-listing-custom-value">Custom Value</pax-label>
+          </pax-item>
+        </pax-list>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </pax-col>
+  </pax-row>
+  <pax-row>
+    <pax-col>
+      <pax-message-strip icon="info">See console for submit events.</pax-message-strip>
+    </pax-col>
+  </pax-row>
+</pax-grid>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const forms = document.querySelectorAll('form');
+    forms.forEach(form => {
+      form.addEventListener('submit', evt => {
+        evt.stopPropagation();
+        evt.preventDefault();
+        console.log(evt);
+        return false;
+      })
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('take_screenshot');
+  });
+</script>
+
+</body>
+
+</html>

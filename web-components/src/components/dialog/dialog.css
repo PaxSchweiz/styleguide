@@ -1,0 +1,95 @@
+:host {
+  box-sizing: border-box !important; /* set this to important because of common box-sizing selector `*, *:before, *:after` in the global scope */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: var(--z-index-item-overlay);
+}
+
+:host([open]) {
+  display: flex;
+}
+
+.dialog-backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-prune);
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.dialog {
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  width: 630px;
+  max-width: 90%;
+  max-height: 80%;
+  margin: 10% auto;
+  overflow: auto;
+  position: relative;
+}
+
+.dialog-header {
+  box-sizing: border-box;
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-light);
+  font-size: 28px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+.header {
+  box-sizing: border-box;
+  padding: 20px 30px;
+}
+
+.close-icon {
+  padding: 15px;
+  margin-left: auto;
+  margin-bottom: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  float: right;
+  outline: none;
+}
+
+.close-icon svg {
+  stroke-linecap: round;
+  stroke: var(--color-noir);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.close-icon:hover svg,
+.close-icon:focus svg {
+  stroke: var(--color-vert);
+}
+
+.dialog-body {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30px;
+  clear: both;
+}
+
+::slotted(:first-child) {
+  margin-top: 0;
+}
+
+::slotted([slot="footer"]) {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 30px;
+}

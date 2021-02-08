@@ -1,0 +1,195 @@
+/**
+ * The `pax-item` is used in other components, i.e.
+ *
+ * - within `pax-select`
+ * - within `pax-list`
+ */
+
+:host {
+  box-sizing: border-box !important; /* set this to important because of common box-sizing selector `*, *:before, *:after` in the global scope */
+  display: block;
+  outline: none;
+  position: relative;
+  text-align: initial;
+}
+
+.item__native {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  outline: none;
+  position: relative;
+  width: 100%;
+}
+
+.item__native::-moz-focus-inner {
+  border: 0;
+}
+
+.item__inner {
+  max-width: 100%;
+  align-items: inherit;
+  align-self: stretch;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: inherit;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input__wrapper {
+  display: block;
+  max-width: 100%;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+::slotted([slot="start"]:not(pax-checkbox):not(pax-radio)) {
+  margin-right: 1rem;
+}
+
+
+/* WITH FLOATING LABEL -------------------------------------------------------*/
+
+
+:host(.item-label-floating) {
+  margin-top: 0.8125em;
+}
+
+::slotted(pax-label.label-floating) {
+  position: absolute;
+  top: 0.25em;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: transform var(--transition-duration), right var(--transition-duration);
+  transform-origin: left top;
+}
+
+:host(.item-has-focus) ::slotted(pax-label.label-floating) {
+  transform: scale(0.8125) translateY(calc(-100% - 0.1em));
+  right: calc(100% * 0.1875 * -1);
+  color: var(--color-vert);
+}
+
+:host(.item-has-value) ::slotted(pax-label.label-floating) {
+  transform: scale(0.8125) translateY(calc(-100% - 0.1em));
+  right: calc(100% * 0.1875 * -1);
+  color: var(--color-noir);
+}
+
+:host(.item-is-invalid) ::slotted(pax-label.label-floating) {
+  color: var(--color-rouge);
+}
+
+:host(.item-datepicker:not(.item-has-focus):not(.item-has-value)) ::slotted(pax-label.label-floating),
+:host(.item-select:not(.item-has-focus):not(.item-has-value)) ::slotted(pax-label.label-floating){
+  right: 40px;
+}
+
+
+/* WITH CHECKBOX -------------------------------------------------------------*/
+
+
+:host(.item-checkbox),
+:host(.item-radio) {
+  margin-right: 1.5rem;
+  max-width: calc(100% - 1.5rem);
+}
+
+:host(.item-checkbox-switch) {
+  margin-right: 2.5rem;
+  max-width: calc(100% - 2.5rem);
+}
+
+:host(.in-list.item-checkbox),
+:host(.in-list.item-radio) {
+  padding: 0;
+}
+
+
+/* WITHIN SELECT COMPOSITION -------------------------------------------------*/
+
+
+:host(.in-select) .item__inner {
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+:host(.in-select) .item__wrapper {
+  width: 100%;
+}
+
+
+/* WITHIN LIST COMPOSITION ---------------------------------------------------*/
+
+
+:host(.in-list) {
+  padding: 7px 10px 7px 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid transparent;
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-gris77);
+}
+
+:host(.in-list:first-child) {
+  border-top: 1px solid transparent;
+}
+
+:host(.in-list:not(.item-checkbox):not(.item-radio):hover) {
+  background-color: var(--color-claire);
+}
+
+:host(.in-list) ::slotted(b[slot="end"]) {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-prune);
+}
+
+:host(.in-list.list-has-lines:first-child) {
+  border-top-color: var(--color-gris30);
+}
+:host(.in-list.list-has-lines) {
+  border-bottom-color: var(--color-gris30);
+}
+
+:host(.in-list.pax-color) {
+  padding-right: 15px;
+}
+
+:host(.in-list.pax-color):after {
+  content: '';
+  display: block;
+  width: 5px;
+  background-color: var(--color-claire);
+  position: absolute;
+  top: 5px;
+  right: 0;
+  bottom: 5px;
+}
+
+:host(.in-list.pax-color--success):after {
+  background-color: var(--color-vert);
+}
+
+:host(.in-list.pax-color--warning):after {
+  background-color: var(--color-orange);
+}
+
+:host(.in-list.pax-color--danger):after {
+  background-color: var(--color-rouge);
+}
+
+:host(.in-list.pax-color--dark):after {
+  background-color: var(--color-prune);
+}
+
+
+/* WITHIN PAGINATION COMPOSITION ---------------------------------------------*/
+
+
+:host(.in-pagination) {
+  font-family: var(--font-family-myriad-pro);
+}

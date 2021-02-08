@@ -1,0 +1,106 @@
+/**
+ * SCOPED
+ */
+
+:host {
+  box-sizing: border-box !important; /* set this to important because of common box-sizing selector `*, *:before, *:after` in the global scope */
+  display: flex;
+  align-items: center;
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-regular);
+  font-size: 16px;
+  color: var(--color-gris77);
+  line-height: 1.375em;
+}
+
+
+/* TRUNCATED ---------------------------------------------------------------- */
+
+
+.label-text {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* WRAP --------------------------------------------------------------------- */
+
+
+:host(.text-wrap) .label-text {
+  white-space: normal;
+}
+
+
+/* WITH LINKS --------------------------------------------------------------- */
+
+
+::slotted(pax-link),
+::slotted(a) {
+  position: relative;
+  z-index: var(--z-index-item-anchor);
+}
+
+
+/* WITH TOOLTIP ------------------------------------------------------------- */
+
+
+::slotted(pax-tooltip) {
+  margin-left: 5px;
+}
+
+
+/* WITHIN FORMS ------------------------------------------------------------- */
+
+
+:host(.in-form) {
+  cursor: pointer;
+}
+
+:host(.in-form) .label-text[data-suffix]:after {
+  content: attr(data-suffix);
+  margin-left: 5px;
+}
+
+
+/* WITHIN ITEM COMPOSITION -------------------------------------------------- */
+
+
+:host-context(pax-item) {
+  flex: 1 1 0;
+  margin: 5px 0;
+}
+
+:host-context(pax-item:not(.item-is-disabled):not(.item-is-readonly).item-has-value) {
+  color: var(--color-noir);
+}
+
+:host-context(pax-item.item-is-disabled) {
+  color: var(--color-gris45);
+  cursor: default;
+}
+
+:host-context(pax-item.item-is-readonly) {
+  color: var(--color-gris);
+}
+
+:host-context(pax-item:not(.item-is-disabled):not(.item-is-readonly).item-has-focus) {
+  color: var(--color-vert);
+}
+
+:host-context(pax-item:not(.item-is-disabled).item-is-checked) {
+  color: var(--color-noir);
+}
+
+:host-context(pax-item.item-is-invalid),
+:host-context(pax-item.item-is-invalid:not(.item-has-focus).item-has-value) {
+  color: var(--color-rouge);
+}
+
+:host-context(pax-item.item-checkbox:not(.item-is-disabled):hover),
+:host-context(pax-item.item-checkbox:not(.item-is-disabled).item-has-focus),
+:host-context(pax-item.item-radio:not(.item-is-disabled):hover),
+:host-context(pax-item.item-radio:not(.item-is-disabled).item-has-focus) {
+  color: var(--color-noir);
+}

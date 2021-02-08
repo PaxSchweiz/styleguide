@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Checkbox - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <form action="">
+      <pax-grid>
+        <pax-row>
+          <pax-col>
+            <pax-headline>Checkbox - Basic</pax-headline>
+          </pax-col>
+        </pax-row>
+        <pax-row>
+          <pax-col col-md-6>
+            <pax-list>
+              <pax-item>
+                <pax-checkbox id="events" name="events" slot="start"></pax-checkbox>
+                <pax-label for="events">Standard with event listeners</pax-label>
+              </pax-item>
+              <pax-item>
+                <pax-checkbox id="events-custom-value" name="events-custon-value" value="custom-value" slot="start"></pax-checkbox>
+                <pax-label for="events-custon-value">Standard with event listeners and custom value</pax-label>
+              </pax-item>
+            </pax-list>
+          </pax-col>
+          <pax-col col-md-6>
+            <pax-message-strip icon="info">See console for all properties of custom events.</pax-message-strip>
+          </pax-col>
+        </pax-row>
+        <pax-row>
+          <pax-col>
+            <pax-list lines id="log">
+            </pax-list>
+          </pax-col>
+        </pax-row>
+      </pax-grid>
+    </form>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const log = document.getElementById('log');
+        const inputs = document.querySelectorAll('pax-checkbox');
+
+        // Logs custom events
+        inputs.forEach(input => {
+          input.addEventListener('checkboxFocus', (evt) => {
+            console.log(evt);
+            log.append(createLogEntry(evt));
+          });
+          input.addEventListener('checkboxChange', (evt) => {
+            console.log(evt);
+            log.append(createLogEntry(evt));
+          });
+          input.addEventListener('checkboxBlur', (evt) => {
+            console.log(evt);
+            log.append(createLogEntry(evt));
+          });
+        });
+
+      });
+
+      /**
+       * Returns markup for a log entry.
+       * @param evt
+       * @return {HTMLElement}
+       */
+      function createLogEntry(evt) {
+        let item = document.createElement('pax-item');
+        item.append(document.createTextNode(evt.type));
+
+        let endSlot = document.createElement('span');
+        endSlot.setAttribute('slot', 'end');
+
+        let checked = document.createElement('pax-badge');
+        checked.append(document.createTextNode('Checked: ' + evt.target.checked));
+        checked.setAttribute('color', evt.target.checked ? 'success' : 'danger');
+        endSlot.append(checked);
+
+        let value = document.createElement('pax-badge');
+        value.append(document.createTextNode('Value: ' + evt.target.value));
+        endSlot.append(value);
+
+        item.append(endSlot);
+
+        return item;
+      }
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

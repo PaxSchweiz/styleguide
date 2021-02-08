@@ -1,0 +1,75 @@
+:host {
+  box-sizing: border-box !important; /* set this to important because of common box-sizing selector `*, *:before, *:after` in the global scope */
+}
+
+:host(:first-child) h1,
+:host(:first-child) h2,
+:host(:first-child) h3,
+:host(:first-child) h4,
+:host(:first-child) h5,
+:host(:first-child) h6 {
+  margin-top: 0;
+}
+
+:host(:last-child) h1,
+:host(:last-child) h2,
+:host(:last-child) h3,
+:host(:last-child) h4,
+:host(:last-child) h5,
+:host(:last-child) h6 {
+  margin-bottom: 0;
+}
+
+h1 {
+  margin: 0.72em 0; /* 30/42 = ~30px */
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-light);
+  font-size: 42px;
+  line-height: 54px;
+  color: var(--color-prune);
+}
+
+h2 {
+  margin: 1em 0; /* 30/30 = 30px */
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-semibold);
+  font-size: 30px;
+  line-height: 1.25em;
+  color: var(--color-prune);
+}
+
+h3 {
+  margin: 1.25em 0; /* 30/24 = 30px */
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-semibold);
+  font-size: 24px;
+  line-height: 1.25em;
+  color: var(--color-prune);
+}
+
+h4 {
+  margin: 1.43em 0; /* 30/21 = ~30px */
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-regular);
+  font-size: 21px;
+  line-height: 1.33em;
+  color: var(--color-prune);
+}
+
+h5 {
+  margin: 1.875em 0; /* 30/16 = 30px */
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-semibold);
+  font-size: 18px;
+  line-height: 1.375em;
+  color: var(--color-prune);
+}
+
+h6 {
+  margin: 1.875em 0; /* 30/16 = 30px */
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-bold);
+  font-size: 16px;
+  line-height: 1.375em;
+  color: var(--color-gris77);
+}

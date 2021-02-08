@@ -1,0 +1,107 @@
+:host {
+  box-sizing: border-box !important; /* set this to important because of common box-sizing selector `*, *:before, *:after` in the global scope */
+  display: block;
+  background-color: transparent !important;
+  position: relative;
+  margin: 0 auto 1em auto;
+  width: 40px;
+}
+
+:host:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+
+.circular {
+  animation: rotate 2s linear infinite;
+  height: 100%;
+  transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.path {
+  stroke: var(--color-vert);
+  stroke-dasharray: 89, 200;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+  stroke-width: 6;
+  stroke-linecap: square;
+  fill: none;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+
+/*@keyframes color {
+  100%,
+  0% {
+    stroke: var(--color-vert);
+  }
+  40% {
+    stroke: var(--color-vert-hover);
+  }
+  66% {
+    stroke: var(--color-vert);
+  }
+  80%,
+  90% {
+    stroke: var(--color-vert-hover);
+  }
+}*/
+
+
+/* COLORS ------------------------------------------------------------------- */
+
+
+:host([color="success"]) .path {
+  stroke: var(--color-vert);
+}
+
+:host([color="warning"]) .path {
+  stroke: var(--color-orange);
+}
+
+:host([color="danger"]) .path {
+  stroke: var(--color-rouge);
+}
+
+:host([color="dark"]) .path {
+  stroke: var(--color-prune);
+}
+
+:host([color="light"]) .path {
+  stroke: var(--color-claire);
+}
+
+
+/* HIDDEN ------------------------------------------------------------------- */
+
+
+:host([hidden]) {
+  display: none;
+}

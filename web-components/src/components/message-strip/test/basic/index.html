@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Message Strip - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-grid>
+      <pax-row>
+        <pax-col>
+          <pax-headline>Message Strip - Basic</pax-headline>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col col-md-6>
+          <pax-message-strip>Pax Message Strip</pax-message-strip>
+          <br/>
+          <pax-message-strip icon="info">Pax Message Strip</pax-message-strip>
+          <br/>
+          <pax-message-strip icon="success">Pax Message Strip</pax-message-strip>
+          <br/>
+          <pax-message-strip icon="warning">Pax Message Strip</pax-message-strip>
+          <br/>
+          <pax-message-strip icon="danger">Pax Message Strip</pax-message-strip>
+          <br/>
+          <pax-message-strip>
+            Just my luck, no ice. Is this my espresso machine? Wh-what is-h-how did you get my
+            espresso machine? I gave it a cold? I gave it a virus. A computer virus. I was part of something special.
+            Must go faster. God help us, we're in the hands of engineers.
+          </pax-message-strip>
+          <br/>
+          <pax-message-strip icon="success">
+            Just my luck, no ice. Is this my espresso machine? Wh-what is-h-how did
+            you get my espresso machine? I gave it a cold? I gave it a virus. A computer virus. I was part of
+            something special. Must go faster. God help us, we're in the hands of engineers.
+          </pax-message-strip>
+          <br/>
+        </pax-col>
+        <pax-col col-md-6>
+          <pax-message-strip color="success">Pax Message Strip</pax-message-strip>
+          <br/>
+          <pax-message-strip color="warning">Pax Message Strip</pax-message-strip>
+          <br/>
+          <pax-message-strip color="danger">Pax Message Strip</pax-message-strip>
+          <br/>
+          <pax-message-strip color="success" icon="success">Pax Message Strip</pax-message-strip>
+          <br/>
+          <pax-message-strip color="warning" icon="warning">Pax Message Strip</pax-message-strip>
+          <br/>
+          <pax-message-strip color="danger" icon="danger">Pax Message Strip</pax-message-strip>
+          <br/>
+          <pax-message-strip></pax-message-strip>
+          <br/>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

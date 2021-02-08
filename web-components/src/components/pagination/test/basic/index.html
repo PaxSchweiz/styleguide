@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Pagination - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-grid>
+      <pax-row>
+        <pax-col>
+          <pax-headline>Pagination - Basic</pax-headline>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-pagination>
+            <pax-link href="#">Previous</pax-link>
+            <pax-link href="#">1</pax-link>
+            <pax-link href="#" emphasized>2</pax-link>
+            <pax-link href="#">3</pax-link>
+            <pax-link href="#">Next</pax-link>
+          </pax-pagination>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-pagination>
+            <pax-link href="#" disabled>Previous</pax-link>
+            <pax-link href="#" emphasized>1</pax-link>
+            <pax-link href="#">2</pax-link>
+            <pax-link href="#">3</pax-link>
+            <pax-link href="#">Next</pax-link>
+          </pax-pagination>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-pagination>
+            <pax-link href="#">Previous</pax-link>
+            <pax-link href="#">1</pax-link>
+            <pax-link href="#">2</pax-link>
+            <pax-link href="#" emphasized>3</pax-link>
+            <pax-link href="#" disabled>Next</pax-link>
+          </pax-pagination>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-pagination>
+            <pax-link href="#">Previous</pax-link>
+            <pax-link href="#">1</pax-link>
+            <pax-link href="#">2</pax-link>
+            <pax-link href="#" emphasized>3</pax-link>
+            <pax-link href="#">4</pax-link>
+            <pax-link href="#">5</pax-link>
+            <pax-link href="#">6</pax-link>
+            <pax-link href="#">7</pax-link>
+            <pax-link href="#">8</pax-link>
+            <pax-link href="#">9</pax-link>
+            <pax-link href="#">10</pax-link>
+            <pax-link href="#">11</pax-link>
+            <pax-link href="#">12</pax-link>
+            <pax-link href="#">13</pax-link>
+            <pax-link href="#">14</pax-link>
+            <pax-link href="#">15</pax-link>
+            <pax-link href="#">16</pax-link>
+            <pax-link href="#">Next</pax-link>
+          </pax-pagination>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-pagination>
+            <pax-link href="#">Previous</pax-link>
+            <pax-item>...</pax-item>
+            <pax-link href="#">9</pax-link>
+            <pax-link href="#" emphasized>10</pax-link>
+            <pax-link href="#">11</pax-link>
+            <pax-item>...</pax-item>
+            <pax-link href="#">Next</pax-link>
+          </pax-pagination>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

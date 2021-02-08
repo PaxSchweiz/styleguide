@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Tooltip - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-headline level="h1">Tooltip - Basic</pax-headline>
+    <pax-grid>
+      <pax-row>
+        <pax-col col-md-6>
+          <pax-tooltip id="tooltip-bottom">
+            Just my luck, no ice. Is this my <pax-link href="#">espresso machine</pax-link>? Wh-what is-h-how did you get my espresso machine? I gave it a cold? I gave it a virus. A computer virus. I was part of something special. Must go faster. God help us, we're in the hands of engineers.
+          </pax-tooltip>
+        </pax-col>
+        <pax-col col-md-6>
+          <pax-label>
+            Pax label
+            <pax-tooltip slot="end">
+              Just my luck, no ice. Is this my <pax-link href="#">espresso machine</pax-link>? Wh-what is-h-how did you get my espresso machine? I gave it a cold? I gave it a virus. A computer virus. I was part of something special. Must go faster. God help us, we're in the hands of engineers.
+            </pax-tooltip>
+          </pax-label>
+        </pax-col>
+      </pax-row>
+      <pax-row style="margin-top: 300px">
+        <pax-col col-md-6>
+          <pax-tooltip closable>
+            Just my luck, no ice. Is this my <pax-link href="#">espresso machine</pax-link>? Wh-what is-h-how did you get my espresso machine? I gave it a cold? I gave it a virus. A computer virus. I was part of something special. Must go faster. God help us, we're in the hands of engineers.
+          </pax-tooltip>
+        </pax-col>
+        <pax-col col-md-6>
+          <pax-label>
+            Pax label
+            <pax-tooltip slot="end" closable id="tooltip-top-closable">
+              Just my luck, no ice. Is this my <pax-link href="#">espresso machine</pax-link>? Wh-what is-h-how did you get my espresso machine? I gave it a cold? I gave it a virus. A computer virus. I was part of something special. Must go faster. God help us, we're in the hands of engineers.
+            </pax-tooltip>
+          </pax-label>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

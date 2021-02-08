@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Progress Bar - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-headline>Progress Bar - Basic</pax-headline>
+    <pax-grid>
+      <pax-row>
+        <pax-col col-md-6>
+          <pax-headline level="3">Default</pax-headline>
+          <pax-progress-bar value="0.9"></pax-progress-bar>
+          <pax-progress-bar value="0.8" color="success"></pax-progress-bar>
+          <pax-progress-bar value="0.7" color="warning"></pax-progress-bar>
+          <pax-progress-bar value="0.6" color="danger"></pax-progress-bar>
+          <pax-progress-bar value="0.5" color="dark"></pax-progress-bar>
+          <pax-progress-bar value="0.4" color="light"></pax-progress-bar>
+        </pax-col>
+        <pax-col col-md-6>
+          <pax-headline level="3">Inline</pax-headline>
+          <pax-progress-bar inline value="0.9"></pax-progress-bar>
+          <pax-progress-bar inline value="0.8" color="success"></pax-progress-bar>
+          <pax-progress-bar inline value="0.7" color="warning"></pax-progress-bar>
+          <pax-progress-bar inline value="0.6" color="danger"></pax-progress-bar>
+          <pax-progress-bar inline value="0.5" color="dark"></pax-progress-bar>
+          <pax-progress-bar inline value="0.4" color="light"></pax-progress-bar>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col col-md-6>
+          <pax-headline level="3">Default with label</pax-headline>
+          <pax-progress-bar value="0.9">
+            <pax-label>Default with value of 0.9</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar value="0.8" color="success">
+            <pax-label>Success with value of 0.8</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar value="0.7" color="warning">
+            <pax-label>Warning with value of 0.7</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar value="0.6" color="danger">
+            <pax-label>Danger with value of 0.6</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar value="0.5" color="dark">
+            <pax-label>Dark with value of 0.5 and a very very very very... very very very... 🙄... very very long label text</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar value="0.4" color="light">
+            <pax-label>Light with value of 0.4</pax-label>
+          </pax-progress-bar>
+        </pax-col>
+        <pax-col col-md-6>
+          <pax-headline level="3">Inline with label</pax-headline>
+          <pax-progress-bar inline value="0.9">
+            <pax-label>Default with value of 0.9</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar inline value="0.8" color="success">
+            <pax-label>Success with value of 0.8</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar inline value="0.7" color="warning">
+            <pax-label>Warning with value of 0.7</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar inline value="0.6" color="danger">
+            <pax-label>Danger with value of 0.6</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar inline value="0.5" color="dark">
+            <pax-label>Dark with value of 0.5</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar inline value="0.4" color="light">
+            <pax-label>Light with value of 0.4</pax-label>
+          </pax-progress-bar>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col col-md-6>
+          <pax-headline level="3">Default with compact design</pax-headline>
+          <pax-progress-bar compact value="0.9"></pax-progress-bar>
+          <pax-progress-bar compact value="0.8" color="success"></pax-progress-bar>
+          <pax-progress-bar compact value="0.7" color="warning"></pax-progress-bar>
+          <pax-progress-bar compact value="0.6" color="danger"></pax-progress-bar>
+          <pax-progress-bar compact value="0.5" color="dark"></pax-progress-bar>
+          <pax-progress-bar compact value="0.4" color="light"></pax-progress-bar>
+        </pax-col>
+        <pax-col col-md-6>
+          <pax-headline level="3">Inline with compact design</pax-headline>
+          <pax-progress-bar compact inline value="0.9"></pax-progress-bar>
+          <pax-progress-bar compact inline value="0.8" color="success"></pax-progress-bar>
+          <pax-progress-bar compact inline value="0.7" color="warning"></pax-progress-bar>
+          <pax-progress-bar compact inline value="0.6" color="danger"></pax-progress-bar>
+          <pax-progress-bar compact inline value="0.5" color="dark"></pax-progress-bar>
+          <pax-progress-bar compact inline value="0.4" color="light"></pax-progress-bar>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col col-md-6>
+          <pax-headline level="3">Default with compact design and label</pax-headline>
+          <pax-progress-bar compact value="0.9">
+            <pax-label>Default with value of 0.9</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar compact value="0.8" color="success">
+            <pax-label>Success with value of 0.8</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar compact value="0.7" color="warning">
+            <pax-label>Warning with value of 0.7</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar compact value="0.6" color="danger">
+            <pax-label>Danger with value of 0.6</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar compact value="0.5" color="dark">
+            <pax-label>Dark with value of 0.5</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar compact value="0.4" color="light">
+            <pax-label>Light with value of 0.4</pax-label>
+          </pax-progress-bar>
+        </pax-col>
+        <pax-col col-md-6>
+          <pax-headline level="3">Inline with compact design and label</pax-headline>
+          <pax-progress-bar compact inline value="0.9">
+            <pax-label>Default with value of 0.9</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar compact inline value="0.8" color="success">
+            <pax-label>Success with value of 0.8</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar compact inline value="0.7" color="warning">
+            <pax-label>Warning with value of 0.7</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar compact inline value="0.6" color="danger">
+            <pax-label>Danger with value of 0.6</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar compact inline value="0.5" color="dark">
+            <pax-label>Dark with value of 0.5</pax-label>
+          </pax-progress-bar>
+          <pax-progress-bar compact inline value="0.4" color="light">
+            <pax-label>Light with value of 0.4</pax-label>
+          </pax-progress-bar>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col col-md-6>
+          <pax-headline level="3">Default with custom value label</pax-headline>
+          <pax-progress-bar value="0.9">
+            <span slot="value-label">21’234,50 CHF</span>
+          </pax-progress-bar>
+          <pax-progress-bar value="0.8" color="success">
+            <span slot="value-label">18’493,60 CHF</span>
+          </pax-progress-bar>
+          <pax-progress-bar value="0.7" color="warning">
+            <span slot="value-label">16’198,80 CHF</span>
+          </pax-progress-bar>
+          <pax-progress-bar value="0.6" color="danger">
+            <span slot="value-label">12’585,00 CHF</span>
+          </pax-progress-bar>
+          <pax-progress-bar value="0.2" color="dark">
+            <span slot="value-label">2’345,00 CHF</span>
+          </pax-progress-bar>
+          <pax-progress-bar value="0.1" color="light">
+            <span slot="value-label">1,00 CHF</span>
+          </pax-progress-bar>
+        </pax-col>
+        <pax-col col-md-6>
+          <pax-headline level="3">Inline with custom value label</pax-headline>
+          <pax-progress-bar inline value="0.9">
+            <span slot="value-label">21’234,50 CHF</span>
+          </pax-progress-bar>
+          <pax-progress-bar inline value="0.8" color="success">
+            <span slot="value-label">18’493,60 CHF</span>
+          </pax-progress-bar>
+          <pax-progress-bar inline value="0.7" color="warning">
+            <span slot="value-label">16’198,80 CHF</span>
+          </pax-progress-bar>
+          <pax-progress-bar inline value="0.6" color="danger">
+            <span slot="value-label">12’585,00 CHF</span>
+          </pax-progress-bar>
+          <pax-progress-bar inline value="0.5" color="dark">
+            <span slot="value-label">2’345,00 CHF</span>
+          </pax-progress-bar>
+          <pax-progress-bar inline value="0.4" color="light">
+            <span slot="value-label">1,00 CHF</span>
+          </pax-progress-bar>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

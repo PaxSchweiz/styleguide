@@ -1,0 +1,49 @@
+:host {
+  box-sizing: border-box !important; /* set this to important because of common box-sizing selector `*, *:before, *:after` in the global scope */
+  display: inline-block;
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-semibold);
+  padding: 6px 8px;
+  font-size: 11px;
+  line-height: 15px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: var(--color-prune);
+  background-color: var(--color-claire);
+}
+
+:host(:empty) {
+  display: none;
+}
+
+:host(.pax-color--success) {
+  color: var(--color-white);
+  background-color: var(--color-vert);
+}
+
+:host(.pax-color--warning) {
+  color: var(--color-white);
+  background-color: var(--color-orange);
+}
+
+:host(.pax-color--danger) {
+  color: var(--color-white);
+  background-color: var(--color-rouge);
+}
+
+:host(.pax-color--dark) {
+  color: var(--color-white);
+  background-color: var(--color-prune);
+}
+
+:host(.pax-color--light) {
+  color: var(--color-gris77);
+  background-color: var(--color-white);
+}
+
+:host(.pax-color--ghost) {
+  color: var(--color-gris77);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gris30);
+  padding: 7px;
+}

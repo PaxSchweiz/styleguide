@@ -1,0 +1,305 @@
+{
+  "id": "web-components",
+  "viewports": [
+    {
+      "label": "phone:portrait",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "label": "phone:landscape",
+      "width": 480,
+      "height": 320
+    },
+    {
+      "label": "tablet:portrait",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "label": "tablet:landscape",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "label": "desktop:full-hd",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "badge:basic",
+      "url": "http://host.docker.internal:3333/src/components/badge/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "busy-indicator:basic",
+      "url": "http://host.docker.internal:3333/src/components/busy-indicator/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "button:basic",
+      "url": "http://host.docker.internal:3333/src/components/button/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "button:clear",
+      "url": "http://host.docker.internal:3333/src/components/button/test/clear",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "button:ghost",
+      "url": "http://host.docker.internal:3333/src/components/button/test/ghost",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "card:basic",
+      "url": "http://host.docker.internal:3333/src/components/card/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "carousel:basic",
+      "url": "http://host.docker.internal:3333/src/components/carousel/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "carousel-item:basic",
+      "url": "http://host.docker.internal:3333/src/components/carousel-item/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "checkbox:basic",
+      "url": "http://host.docker.internal:3333/src/components/checkbox/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "checkbox:events",
+      "url": "http://host.docker.internal:3333/src/components/checkbox/test/events",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "checkbox:switch",
+      "url": "http://host.docker.internal:3333/src/components/checkbox/test/switch",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "col:basic",
+      "url": "http://host.docker.internal:3333/src/components/col/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "datepicker:basic",
+      "url": "http://host.docker.internal:3333/src/components/datepicker/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "dialog:basic",
+      "url": "http://host.docker.internal:3333/src/components/dialog/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000,
+      "clickSelector": "#open-button"
+    },
+    {
+      "label": "grid:basic",
+      "url": "http://host.docker.internal:3333/src/components/grid/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "headline:basic",
+      "url": "http://host.docker.internal:3333/src/components/headline/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "icon:basic",
+      "url": "http://host.docker.internal:3333/src/components/icon/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "input:basic",
+      "url": "http://host.docker.internal:3333/src/components/input/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "item:basic",
+      "url": "http://host.docker.internal:3333/src/components/item/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "item:checkbox:basic",
+      "url": "http://host.docker.internal:3333/src/components/item/test/checkbox/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "item:checkbox:switch",
+      "url": "http://host.docker.internal:3333/src/components/item/test/checkbox/switch",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "item:datepicker",
+      "url": "http://host.docker.internal:3333/src/components/item/test/datepicker",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "item:input",
+      "url": "http://host.docker.internal:3333/src/components/item/test/input",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "item:radio-group",
+      "url": "http://host.docker.internal:3333/src/components/item/test/radio-group",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "item:select",
+      "url": "http://host.docker.internal:3333/src/components/item/test/select",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "item:textarea",
+      "url": "http://host.docker.internal:3333/src/components/item/test/textarea",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "label:form",
+      "url": "http://host.docker.internal:3333/src/components/label/test/form",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "label:standalone",
+      "url": "http://host.docker.internal:3333/src/components/label/test/standalone",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "link:basic",
+      "url": "http://host.docker.internal:3333/src/components/link/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "list:basic",
+      "url": "http://host.docker.internal:3333/src/components/list/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "list:inline",
+      "url": "http://host.docker.internal:3333/src/components/list/test/inline",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "message-strip:basic",
+      "url": "http://host.docker.internal:3333/src/components/message-strip/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "pagination:basic",
+      "url": "http://host.docker.internal:3333/src/components/pagination/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "panel:basic",
+      "url": "http://host.docker.internal:3333/src/components/panel/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "progress-bar:basic",
+      "url": "http://host.docker.internal:3333/src/components/progress-bar/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "radio:basic",
+      "url": "http://host.docker.internal:3333/src/components/radio/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "radio-group:basic",
+      "url": "http://host.docker.internal:3333/src/components/radio-group/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "row:basic",
+      "url": "http://host.docker.internal:3333/src/components/row/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "select:basic",
+      "url": "http://host.docker.internal:3333/src/components/select/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "textarea:basic",
+      "url": "http://host.docker.internal:3333/src/components/textarea/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000
+    },
+    {
+      "label": "tooltip:basic:bottom",
+      "url": "http://host.docker.internal:3333/src/components/tooltip/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000,
+      "clickSelector": "#tooltip-bottom"
+    },
+    {
+      "label": "tooltip:basic:top-closable",
+      "url": "http://host.docker.internal:3333/src/components/tooltip/test/basic",
+      "readyEvent": "take_screenshot",
+      "delay": 1000,
+      "clickSelector": "#tooltip-top-closable"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

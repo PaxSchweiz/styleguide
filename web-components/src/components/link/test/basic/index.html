@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Link - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-grid>
+      <pax-row>
+        <pax-col>
+          <pax-headline>Link - Basic</pax-headline>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col col-md-6>
+          <p><pax-link href="https://pax.ch">Default</pax-link></p>
+          <p><pax-link href="https://pax.ch" muted>Muted</pax-link></p>
+          <p><pax-link href="https://pax.ch" emphasized>Emphasized</pax-link></p>
+          <p><pax-link href="https://pax.ch" disabled>Disabled</pax-link></p>
+          <p><pax-link disabled>Disabled without href</pax-link></p>
+        </pax-col>
+        <pax-col col-md-6>
+          <p>
+            Hey, take a look at the <pax-link href="https://pax.ch">earthlings</pax-link>. Goodbye! Hey, you know how
+            I'm, like, <pax-link href="https://pax.ch" muted>always trying</pax-link> to save the <pax-link
+            href="https://pax.ch" emphasized>planet</pax-link>? Here's my
+            chance. God help us, we're in the <pax-link href="https://pax.ch" disabled>hands of engineers</pax-link>.
+            Life finds a way. I gave it a cold? I gave it a virus. <pax-link disabled>A computer virus</pax-link>.
+            Life finds a way.
+          </p>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col col-md-6>
+          <pax-list>
+            <pax-item>
+              <pax-checkbox slot="start"></pax-checkbox>
+              <pax-label>Standard with a
+                <pax-link href="#foo">Link</pax-link></pax-label>
+            </pax-item>
+            <pax-item>
+              <pax-checkbox slot="start"></pax-checkbox>
+              <pax-label>Standard with a
+                <a href="#foo">Link</a></pax-label>
+            </pax-item>
+          </pax-list>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,15 @@
+@import "variables.css";
+
+body {
+    box-sizing: border-box;
+    color: var(--color-prune);
+    font-family: -apple-system,BlinkMacSystemFont,Source Sans Pro,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-size: var(--font-base-size);
+    line-height: var(--font-base-line-height);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Textarea - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-grid>
+      <pax-row>
+        <pax-col>
+          <pax-headline>Textarea - Basic</pax-headline>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-textarea/>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-textarea placeholder="With placeholder"/>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-textarea value="Checkmate... God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? God help us, we're in the hands of engineers. I gave it a cold? I gave it a virus. A computer virus."/>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-textarea rows="5" placeholder="With 5 rows"/>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-textarea disabled placeholder="Disabled"/>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-textarea disabled value="Checkmate... God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? God help us, we're in the hands of engineers. I gave it a cold? I gave it a virus. A computer virus."/>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-textarea readonly placeholder="Readonly"/>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-textarea readonly value="Checkmate... God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? God help us, we're in the hands of engineers. I gave it a cold? I gave it a virus. A computer virus."/>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-textarea invalid/>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-textarea invalid value="Checkmate... God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? God help us, we're in the hands of engineers. I gave it a cold? I gave it a virus. A computer virus."/>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-textarea invalid error="Error message"/>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-textarea invalid error="Error message" value="Checkmate... God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? God help us, we're in the hands of engineers. I gave it a cold? I gave it a virus. A computer virus."/>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

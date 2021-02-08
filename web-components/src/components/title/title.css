@@ -1,0 +1,32 @@
+:host {
+  box-sizing: border-box !important; /* set this to important because of common box-sizing selector `*, *:before, *:after` in the global scope */
+}
+
+:host(:first-child) h1,
+:host(:first-child) h2 {
+  margin-top: 0;
+}
+
+:host(:last-child) h1,
+:host(:last-child) h2 {
+  margin-bottom: 0;
+}
+
+h1 {
+  margin: 0.72em 0; /* 30/42 = ~30px */
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-bold);
+  font-size: 42px;
+  line-height: 54px;
+  color: var(--color-orange);
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 1em 0; /* 30/30 = 30px */
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-semibold);
+  font-size: 30px;
+  line-height: 1.25em;
+  color: var(--color-prune);
+}

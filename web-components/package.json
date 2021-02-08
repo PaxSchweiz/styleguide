@@ -1,0 +1,44 @@
+{
+  "name": "@devatpax/web-components",
+  "author": "devatpax",
+  "version": "2.4.0",
+  "description": "Pax Web Components Library",
+  "homepage": "https://paxschweiz.github.io/",
+  "main": "dist/index.cjs.js",
+  "module": "dist/custom-elements/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/custom-elements/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/pax/pax.esm.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "clean": "node scripts/clean.js",
+    "export.docs": "npm run build && node scripts/copy-dist.js",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "test.screenshots": "backstop test --docker",
+    "test.screenshots.refs": "backstop reference --docker",
+    "test.screenshots.approve": "backstop approve",
+    "generate": "stencil generate"
+  },
+  "dependencies": {
+    "@stencil/core": "^2.0.1",
+    "date-fns": "2.9.0",
+    "swiper": "5.4.1"
+  },
+  "devDependencies": {
+    "backstopjs": "5.0.1",
+    "fs-extra": "8.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaxSchweiz/paxdefaults.git"
+  }
+}

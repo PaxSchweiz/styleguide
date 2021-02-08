@@ -1,0 +1,173 @@
+:host {
+  box-sizing: border-box !important; /* set this to important because of common box-sizing selector `*, *:before, *:after` in the global scope */
+  display: block;
+  position: relative;
+  background-color: var(--color-white);
+}
+
+input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 9px 40px 8px 0;
+  border: none;
+  border-bottom: 1px solid var(--color-gris77);
+  margin: 0;
+  background-color: var(--color-white);
+  font-size: var(--font-input-size);
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--font-input-line-height);
+  color: var(--color-noir);
+  outline: none;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  position: relative;
+  z-index: var(--z-index-item-input);
+}
+
+.select-icon {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  transition: transform var(--transition-duration) var(--transition-timing-function);
+}
+
+.select-icon path {
+  fill: var(--color-gris77);
+}
+
+:host(.picker-open) .select-icon {
+  transform: rotate(180deg);
+}
+
+:host(.picker-open) .select-icon path {
+  fill: var(--color-vert);
+}
+
+.picker {
+  width: 100%;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  padding: 0;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 4;
+}
+
+.picker pax-list {
+  border-top: none;
+}
+
+.picker pax-item {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 14px;
+  line-height: 1.5em;
+  cursor: pointer;
+  flex-wrap: nowrap;
+}
+
+.picker pax-item:hover,
+.picker pax-item:focus {
+  color: var(--color-gris77);
+  background-color: var(--color-claire);
+}
+
+.picker pax-item.selected {
+  color: var(--color-white);
+  background-color: var(--color-vert);
+}
+
+.picker pax-item.disabled {
+  color: var(--color-gris45);
+  cursor: default;
+  background-color: transparent;
+}
+
+.error-message {
+  margin-top: 0.1em;
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-regular);
+  font-size: 13px;
+  color: var(--color-rouge);
+}
+
+
+/* DISABLED ----------------------------------------------------------------- */
+
+
+:host([disabled]) input {
+  border-bottom-color: var(--color-noir);
+  color: var(--color-gris45);
+  cursor: default;
+}
+
+:host([disabled]) .select-icon path {
+  fill: var(--color-gris45);
+}
+
+
+/* READONLY ----------------------------------------------------------------- */
+
+
+:host([readonly]) input {
+  border-bottom-color: var(--color-gris);
+  color: var(--color-gris);
+  cursor: text;
+}
+
+:host([readonly]) .select-icon path {
+  fill: var(--color-gris);
+}
+
+
+/* WITH VALUE --------------------------------------------------------------- */
+
+
+:host(:not([readonly]).has-value) input {
+  border-bottom-color: var(--color-noir);
+}
+
+:host(:not([readonly]):not([disabled]).has-value) .select-icon path {
+  fill: var(--color-noir);
+}
+
+
+/* INVALID ------------------------------------------------------------------ */
+
+
+:host([invalid]:not([readonly]):not([disabled])) input:not(:focus) {
+  padding-bottom: 7px;
+  border-bottom-color: var(--color-rouge);
+  border-bottom-width: 2px;
+}
+
+
+/* HOVER/FOCUS -------------------------------------------------------------- */
+
+
+:host(:not([readonly]):not([disabled]).has-focus) input {
+  padding-bottom: 7px;
+  border-bottom-color: var(--color-vert);
+  border-bottom-width: 2px;
+}
+
+:host(:not([readonly]):not([disabled]).has-focus) .select-icon path {
+  fill: var(--color-vert);
+}
+
+
+/* WITHIN ITEM COMPOSITION -------------------------------------------------- */
+
+
+:host-context(pax-item) input {
+  background-color: transparent;
+}
+
+:host-context(pax-item:not(.item-is-disabled):not(.item-is-invalid).item-has-focus) input,
+:host-context(pax-item:not(.item-is-disabled):not(.item-is-invalid):hover) input {
+  border-bottom-color: var(--color-vert);
+}

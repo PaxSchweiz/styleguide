@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Item - Datepickers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-headline level="1">Item - Datepickers</pax-headline>
+    <pax-headline level="2">Floating Labels</pax-headline>
+    <pax-grid>
+      <pax-row>
+        <pax-col col-md-6>
+          <pax-headline level="3">Default</pax-headline>
+          <form action="">
+            <pax-item>
+              <pax-label for="default-floating" position="floating">Label</pax-label>
+              <pax-datepicker id="default-floating"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-long-label" position="floating">With label, truncated, therefore we need a longer value, that really stretches very very very long</pax-label>
+              <pax-datepicker id="default-floating-long-label"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-prefilled" position="floating">Prefilled</pax-label>
+              <pax-datepicker id="default-floating-prefilled" value="17.07.2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-prefilled-invalid" position="floating">Prefilled with invalid value</pax-label>
+              <pax-datepicker id="default-floating-prefilled-invalid" value="17-07-2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-disabled" position="floating">Disabled</pax-label>
+              <pax-datepicker disabled id="default-floating-disabled"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-disabled-prefilled" position="floating">Disabled and Prefilled</pax-label>
+              <pax-datepicker disabled id="default-floating-disabled-prefilled" value="21.07.2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-readonly-prefilled" position="floating">Readonly</pax-label>
+              <pax-datepicker readonly id="default-floating-readonly-prefilled" value="21.07.2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-invalid" position="floating">Invalid</pax-label>
+              <pax-datepicker invalid id="default-floating-invalid"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-invalid-prefilled" position="floating">Invalid</pax-label>
+              <pax-datepicker invalid id="default-floating-invalid-prefilled" value="21.07.2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-floating-invalid-with-error-msg" position="floating">Invalid</pax-label>
+              <pax-datepicker invalid error="Error message" id="default-floating-invalid-with-error-msg"></pax-datepicker>
+            </pax-item>
+            <br>
+            <button type="submit">Submit</button>
+          </form>
+        </pax-col>
+        <pax-col col-md-6>
+          <pax-headline level="3">Required</pax-headline>
+          <form action="">
+            <pax-item>
+              <pax-label required for="required-floating" position="floating">Label</pax-label>
+              <pax-datepicker id="required-floating"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-long-label" position="floating">With label, truncated, therefore we need a longer value, that really stretches very very very long</pax-label>
+              <pax-datepicker id="required-floating-long-label"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-prefilled" position="floating">Prefilled</pax-label>
+              <pax-datepicker id="required-floating-prefilled" value="Lorem ipsum"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-prefilled-invalid" position="floating">Prefilled with invalid value</pax-label>
+              <pax-datepicker id="required-floating-prefilled-invalid" value="17-07-2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-disabled" position="floating">Disabled</pax-label>
+              <pax-datepicker disabled id="required-floating-disabled"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-disabled-prefilled" position="floating">Disabled and Prefilled</pax-label>
+              <pax-datepicker disabled id="required-floating-disabled-prefilled" value="21.07.2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-readonly-prefilled" position="floating">Readonly</pax-label>
+              <pax-datepicker readonly id="required-floating-readonly-prefilled" value="21.07.2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-invalid" position="floating">Invalid</pax-label>
+              <pax-datepicker invalid id="required-floating-invalid"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-invalid-prefilled" position="floating">Invalid</pax-label>
+              <pax-datepicker invalid id="required-floating-invalid-prefilled" value="21.07.2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-floating-invalid-with-error-msg" position="floating">Invalid</pax-label>
+              <pax-datepicker invalid error="Error message" id="required-floating-invalid-with-error-msg"></pax-datepicker>
+            </pax-item>
+            <br>
+            <button type="submit">Submit</button>
+          </form>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+    <pax-headline level="2">Stacked Labels</pax-headline>
+    <pax-grid>
+      <pax-row>
+        <pax-col col-md-6>
+          <pax-headline level="3">Default</pax-headline>
+          <form action="">
+            <pax-item>
+              <pax-label for="default">Label</pax-label>
+              <pax-datepicker id="default"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-long-label">With label, truncated, therefore we need a longer value, that really stretches very very very long</pax-label>
+              <pax-datepicker id="default-long-label"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label wrap for="default-long-label-wrap">With label, wrap, therefore we need a longer value, that really stretches very very very long</pax-label>
+              <pax-datepicker id="default-long-label-wrap"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-prefilled">Prefilled</pax-label>
+              <pax-datepicker id="default-prefilled" value="21.07.2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-prefilled-invalid">Prefilled with invalid value</pax-label>
+              <pax-datepicker id="default-prefilled-invalid" value="17-07-2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-disabled">Disabled</pax-label>
+              <pax-datepicker disabled id="default-disabled"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-disabled-prefilled">Disabled and Prefilled</pax-label>
+              <pax-datepicker disabled id="default-disabled-prefilled" value="21.07.2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-readonly-prefilled">Readonly</pax-label>
+              <pax-datepicker readonly id="default-readonly-prefilled" value="21.07.2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-invalid">Invalid</pax-label>
+              <pax-datepicker invalid id="default-invalid" value="Wrong value"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-invalid-prefilled">Invalid</pax-label>
+              <pax-datepicker invalid id="default-invalid-prefilled" value="21.07.2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label for="default-invalid-with-error-msg">Invalid</pax-label>
+              <pax-datepicker invalid error="Error message" id="default-invalid-with-error-msg" value="Wrong value"></pax-datepicker>
+            </pax-item>
+            <br>
+            <button type="submit">Submit</button>
+          </form>
+        </pax-col>
+        <pax-col col-md-6>
+          <pax-headline level="3">Required</pax-headline>
+          <form action="">
+            <pax-item>
+              <pax-label required for="required">Label</pax-label>
+              <pax-datepicker id="required"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-long-label">With label, truncated, therefore we need a longer value, that really stretches very very very long</pax-label>
+              <pax-datepicker id="required-long-label"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required wrap for="required-long-label-wrap">With label, wrap, therefore we need a longer value, that really stretches very very very long</pax-label>
+              <pax-datepicker id="required-long-label-wrap"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-prefilled">Prefilled</pax-label>
+              <pax-datepicker id="required-prefilled" value="21.07.2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-prefilled-invalid">Prefilled with invalid value</pax-label>
+              <pax-datepicker id="required-prefilled-invalid" value="17-07-2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-disabled">Disabled</pax-label>
+              <pax-datepicker disabled id="required-disabled"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-disabled-prefilled">Disabled and Prefilled</pax-label>
+              <pax-datepicker disabled id="required-disabled-prefilled" value="21.07.2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-readonly-prefilled">Readonly</pax-label>
+              <pax-datepicker readonly id="required-readonly-prefilled" value="21.07.2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-invalid">Invalid</pax-label>
+              <pax-datepicker invalid id="required-invalid"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-invalid-prefilled">Invalid</pax-label>
+              <pax-datepicker invalid id="required-invalid-prefilled" value="21.07.2020"></pax-datepicker>
+            </pax-item>
+            <pax-item>
+              <pax-label required for="required-invalid-with-error-msg">Invalid</pax-label>
+              <pax-datepicker invalid error="Error message" id="required-invalid-with-error-msg"></pax-datepicker>
+            </pax-item>
+            <br>
+            <button type="submit">Submit</button>
+          </form>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-message-strip icon="info">See console for submit events.</pax-message-strip>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const forms = document.querySelectorAll('form');
+        forms.forEach(form => {
+          form.addEventListener('submit', evt => {
+            evt.stopPropagation();
+            evt.preventDefault();
+            console.log(evt);
+            return false;
+          })
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

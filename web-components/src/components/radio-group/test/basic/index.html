@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Radio Group - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <form action="">
+      <pax-headline level="1">Radio Group - Basic</pax-headline>
+      <pax-grid>
+        <pax-row>
+          <pax-col col-md-3>
+            <p>Default:</p>
+            <pax-radio-group name="default">
+              <pax-radio value="1"></pax-radio>
+              <pax-radio value="2"></pax-radio>
+              <pax-radio value="3"></pax-radio>
+            </pax-radio-group>
+          </pax-col>
+          <pax-col col-md-3>
+            <p>Prefilled:</p>
+            <pax-radio-group name="default" value="2">
+              <pax-radio value="1"></pax-radio>
+              <pax-radio value="2"></pax-radio>
+              <pax-radio value="3"></pax-radio>
+            </pax-radio-group>
+          </pax-col>
+        </pax-row>
+      </pax-grid>
+    </form>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

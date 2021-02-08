@@ -1,0 +1,100 @@
+/**
+ * SCOPED
+ */
+
+:host {
+  box-sizing: border-box !important; /* set this to important because of common box-sizing selector `*, *:before, *:after` in the global scope */
+}
+
+textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  padding: 9px 0 8px 0;
+  border: none;
+  border-bottom: 1px solid var(--color-gris77);
+  font-size: 16px;
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.375em;
+  color: var(--color-noir);
+  outline: none;
+  text-overflow: ellipsis;
+  resize: vertical;
+}
+
+textarea::placeholder {
+  color: var(--color-gris60);
+}
+
+.error-message {
+  margin-top: 0.1em;
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-regular);
+  font-size: 13px;
+  color: var(--color-rouge);
+}
+
+
+/* DISABLED ----------------------------------------------------------------- */
+
+
+textarea[disabled] {
+  color: var(--color-gris45);
+  background-color: transparent;
+}
+
+textarea[disabled]::placeholder {
+  color: var(--color-gris45);
+}
+
+
+/* READ-ONLY ---------------------------------------------------------------- */
+
+
+textarea[readonly] {
+  color: var(--color-prune);
+}
+
+
+/* WITH VALUE --------------------------------------------------------------- */
+
+
+:host(.has-value) textarea {
+  border-bottom-color: var(--color-noir);
+}
+
+
+/* HOVER/FOCUS -------------------------------------------------------------- */
+
+
+:host(:not([readonly]):not([disabled]).has-focus) textarea {
+  padding-bottom: 7px;
+  border-bottom-color: var(--color-vert);
+  border-bottom-width: 2px;
+  color: var(--color-gris77);
+}
+
+
+/* INVALID ------------------------------------------------------------------ */
+
+
+:host([invalid]:not([readonly]):not([disabled])) textarea:not(:focus) {
+  padding-bottom: 7px;
+  border-bottom-color: var(--color-rouge);
+  border-bottom-width: 2px;
+}
+
+
+/* WITHIN ITEM COMPOSITION -------------------------------------------------- */
+
+
+:host-context(pax-item) textarea {
+  background-color: transparent;
+}
+
+:host-context(pax-item.item-has-focus):not([disabled]) textarea,
+:host-context(pax-item:hover):not([disabled]) textarea {
+  border-bottom-color: var(--color-vert);
+}

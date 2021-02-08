@@ -1,0 +1,132 @@
+:host {
+  box-sizing: border-box !important; /* set this to important because of common box-sizing selector `*, *:before, *:after` in the global scope */
+  display: inline-block;
+  position: relative;
+  user-select: none;
+  z-index: var(--z-index-item-input); /* use a lower z-index than links inside checkbox label */
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  appearance: none;
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.checkbox-icon {
+  display: block;
+  position: relative;
+  width: 17px;
+  height: 17px;
+  padding: 1px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--color-gris30);
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+}
+
+.checkbox-icon path {
+  fill: none;
+  stroke: var(--color-white);
+  stroke-width: 2px;
+  opacity: 0;
+}
+
+.switch-icon {
+  box-sizing: border-box;
+  display: block;
+  width: 40px;
+  height: 22px;
+  border: 2px solid var(--color-gris30);
+  border-radius: 14px;
+  background-color: transparent;
+  position: relative;
+}
+
+.switch-icon:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  display: block;
+  background-color: var(--color-gris30);
+  border-radius: 6px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: transform var(--transition-duration) var(--transition-timing-function), background-color var(--transition-duration) var(--transition-timing-function);
+}
+
+
+/* DISABLED ----------------------------------------------------------------- */
+
+
+:host([disabled]) button {
+  cursor: default;
+}
+
+
+/* CHECKED ------------------------------------------------------------------ */
+
+
+:host([checked]) .checkbox-icon {
+  border-width: 2px;
+  border-color: var(--color-noir);
+  background-color: var(--color-noir);
+}
+
+:host([checked]) .checkbox-icon path {
+  opacity: 1;
+}
+
+:host([checked]) .switch-icon {
+  border-color: var(--color-vert);
+}
+
+:host([checked]) .switch-icon:after {
+  transform: translateX(18px);
+  background-color: var(--color-noir);
+}
+
+
+/* HOVER/FOCUS -------------------------------------------------------------- */
+
+
+:host(:not([disabled]).has-keyboard-focus) .checkbox-icon {
+  border-width: 2px;
+  border-color: var(--color-vert);
+}
+
+:host([checked]:not([disabled]).has-keyboard-focus) .checkbox-icon {
+  border-width: 2px;
+  border-color: var(--color-vert);
+}
+
+:host(:not([disabled]):hover) .switch-icon:after {
+  background-color: var(--color-vert);
+}
+
+:host(:not([disabled]).has-keyboard-focus) .switch-icon:after {
+  background-color: var(--color-vert);
+}
+
+
+/* WITHIN ITEM COMPOSITION -------------------------------------------------- */
+
+
+:host(.in-item) {
+  display: block;
+  position: static;
+  align-self: baseline;
+  margin: 8px 9px 5px 0;
+}

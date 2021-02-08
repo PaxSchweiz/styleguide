@@ -1,0 +1,137 @@
+:host {
+  box-sizing: border-box !important; /* set this to important because of common box-sizing selector `*, *:before, *:after` in the global scope */
+  display: inline-block;
+  width: 16px;
+  height: 17px;
+  line-height: 1.375em;
+  position: relative;
+}
+
+.tooltip {
+  display: flex;
+  visibility: hidden;
+  align-items: flex-start;
+  box-sizing: border-box;
+  position: absolute;
+  width: 260px;
+  background-color: var(--color-claire);
+  box-shadow: var(--box-shadow);
+  z-index: var(--z-index-item-overlay);
+}
+
+.tooltip-top,
+.tooltip-top-left {
+  border-top: 1px solid var(--color-noir);
+}
+
+.tooltip-bottom,
+.tooltip-bottom-left {
+  border-bottom: 1px solid var(--color-noir);
+}
+
+:host([open]) .tooltip {
+  visibility: visible;
+}
+
+.tooltip-closable {
+  width: 280px;
+}
+
+.tooltip-body {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.tooltip-icon {
+  box-sizing: border-box;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.tooltip-icon .tooltip-icon-bg {
+  fill: var(--color-orange);
+}
+
+.tooltip-icon path {
+  fill: var(--color-white);
+}
+
+.close-icon {
+  box-sizing: border-box;
+  padding: 11px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.close-icon path {
+  stroke-linecap: round;
+  stroke: var(--color-noir);
+  stroke-width: 1.5;
+  fill: none;
+}
+
+.close-icon:hover path,
+.close-icon:focus path {
+  stroke: var(--color-vert);
+}
+
+.arrow-icon {
+  visibility: hidden;
+  position: absolute;
+  z-index: var(--z-index-item-overlay);
+}
+
+.tooltip-top + .arrow-icon {
+  left: -13px;
+  top: calc(100% + -4px);
+}
+
+.tooltip-top-left + .arrow-icon {
+  left: -1px;
+  top: calc(100% + -3px);
+}
+
+.tooltip-bottom + .arrow-icon {
+  left: -13px;
+  bottom: calc(100% + -7px);
+}
+
+.tooltip-bottom-left + .arrow-icon {
+  left: -1px;
+  bottom: calc(100% + -7px);
+}
+
+:host([open]) .arrow-icon {
+  visibility: visible;
+}
+
+.arrow-down-bg {
+  fill: var(--color-claire);
+  stroke: none;
+}
+
+.arrow-down-border {
+  fill: var(--color-noir);
+  stroke: none;
+}
+
+.tooltip-body,
+::slotted(*) {
+  font-size: 12px;
+  line-height: 1.3333333333em;
+  color: var(--color-noir);
+  white-space: normal;
+}
+
+::slotted(:first-child) {
+  margin-top: 0;
+}
+
+::slotted(:last-child) {
+  margin-bottom: 0;
+}

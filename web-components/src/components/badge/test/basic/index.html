@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Badge - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-grid>
+      <pax-row>
+        <pax-col>
+          <pax-headline>Badge - Basic</pax-headline>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col col-md-6>
+          <pax-headline level="3">Badges right</pax-headline>
+          <pax-list lines>
+            <pax-item>
+              Default Badge
+              <pax-badge slot="end">Badge</pax-badge>
+            </pax-item>
+            <pax-item>
+              Success Badge
+              <pax-badge slot="end" color="success">Badge</pax-badge>
+            </pax-item>
+            <pax-item>
+              Warning Badge
+              <pax-badge slot="end" color="warning">Badge</pax-badge>
+            </pax-item>
+            <pax-item>
+              Danger Badge
+              <pax-badge slot="end" color="danger">Badge</pax-badge>
+            </pax-item>
+            <pax-item>
+              Dark Badge
+              <pax-badge slot="end" color="dark">Badge</pax-badge>
+            </pax-item>
+            <pax-item>
+              Light Badge
+              <pax-badge slot="end" color="light">Badge</pax-badge>
+            </pax-item>
+            <pax-item>
+              Ghost Badge
+              <pax-badge slot="end" color="ghost">Badge</pax-badge>
+            </pax-item>
+            <pax-item>
+              Empty Badge <i>(does not get rendered)</i>
+              <pax-badge></pax-badge>
+            </pax-item>
+          </pax-list>
+        </pax-col>
+        <pax-col col-md-6>
+          <pax-headline level="3">Badges left</pax-headline>
+          <pax-list lines>
+            <pax-item>
+              Default Badge
+              <pax-badge slot="start">Badge</pax-badge>
+            </pax-item>
+            <pax-item>
+              Success Badge
+              <pax-badge slot="start" color="success">Badge</pax-badge>
+            </pax-item>
+            <pax-item>
+              Warning Badge
+              <pax-badge slot="start" color="warning">Badge</pax-badge>
+            </pax-item>
+            <pax-item>
+              Danger Badge
+              <pax-badge slot="start" color="danger">Badge</pax-badge>
+            </pax-item>
+            <pax-item>
+              Dark Badge
+              <pax-badge slot="start" color="dark">Badge</pax-badge>
+            </pax-item>
+            <pax-item>
+              Light Badge
+              <pax-badge slot="start" color="light">Badge</pax-badge>
+            </pax-item>
+            <pax-item>
+              Ghost Badge
+              <pax-badge slot="start" color="ghost">Badge</pax-badge>
+            </pax-item>
+            <pax-item>
+              Empty Badge <i>(does not get rendered)</i>
+              <pax-badge></pax-badge>
+            </pax-item>
+          </pax-list>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

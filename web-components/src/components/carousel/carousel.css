@@ -1,0 +1,57 @@
+@import url('../../../node_modules/swiper/css/swiper.css');
+
+pax-carousel {
+  display: block;
+  position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: auto;
+  height: auto;
+  margin-top: 0;
+  transform: translateY(-50%);
+  color: var(--color-vert);
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 17px;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: 17px;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  color: var(--color-vert-hover);
+}
+
+.swiper-button-prev:focus,
+.swiper-button-next:focus  {
+  outline: none;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: var(--color-vert-hover);
+}
+
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-next:after {
+  content: none;
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  content: none;
+}
+
+.swiper-button-prev svg,
+.swiper-button-next svg{
+  width: 16px;
+  height: 30px;
+  fill: currentColor;
+}

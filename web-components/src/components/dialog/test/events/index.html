@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Dialog - Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-headline level="h1">Dialog - Events</pax-headline>
+    <pax-grid>
+      <pax-row>
+        <pax-col>
+          <pax-button id="open-button">Open dialog</pax-button>
+          <pax-dialog id="dialog" header="Dialog header">
+            <p>Just my luck, no ice. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? I gave it a cold? I gave it a virus. A computer virus. I was part of something special. Must go faster. God help us, we're in the hands of engineers.</p>
+            <div slot="footer">
+              <pax-button id="cancel-button" fill="clear">Cancel</pax-button>
+              <pax-button id="ok-button">Ok</pax-button>
+            </div>
+          </pax-dialog>
+      </pax-row>
+      <pax-row>
+        <pax-col>
+          <pax-message-strip icon="info">See console for for each custom event and the dialog open state: `beforeOpen`, `afterOpen`, `beforeClose`, and `afterClose`.</pax-message-strip>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        var dialog = document.getElementById('dialog');
+        var openButton = document.getElementById('open-button');
+        var cancelButton = document.getElementById('cancel-button');
+        var okButton = document.getElementById('ok-button');
+
+        dialog.addEventListener('beforeOpen', function () {
+          console.log('beforeOpen was emitted');
+          console.log('dialog has `open` attribute: ' + dialog.hasAttribute('open'));
+        });
+
+        dialog.addEventListener('afterOpen', function () {
+          console.log('afterOpen was emitted');
+          console.log('dialog has `open` attribute: ' + dialog.hasAttribute('open'));
+        });
+
+        dialog.addEventListener('beforeClose', function () {
+          console.log('beforeClose was emitted');
+          console.log('dialog has `open` attribute: ' + dialog.hasAttribute('open'));
+        });
+
+        dialog.addEventListener('afterClose', function () {
+          console.log('afterClose was emitted');
+          console.log('dialog has `open` attribute: ' + dialog.hasAttribute('open'));
+        });
+
+        openButton.addEventListener('click', function () {
+          dialog.open();
+        });
+
+        cancelButton.addEventListener('click', function () {
+          dialog.close();
+        });
+
+        okButton.addEventListener('click', function () {
+          dialog.close();
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

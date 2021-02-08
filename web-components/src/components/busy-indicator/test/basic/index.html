@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Busy Indicator - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-headline level="1">Busy Indicator - Basic</pax-headline>
+    <pax-grid>
+      <pax-row>
+        <pax-col col-md-3>
+          <pax-busy-indicator/>
+        </pax-col>
+        <pax-col col-md-3>
+          <pax-busy-indicator color="success"/>
+        </pax-col>
+        <pax-col col-md-3>
+          <pax-busy-indicator color="warning"/>
+        </pax-col>
+        <pax-col col-md-3>
+          <pax-busy-indicator color="danger"/>
+        </pax-col>
+        <pax-col col-md-3>
+          <pax-busy-indicator color="dark"/>
+        </pax-col>
+        <pax-col col-md-3>
+          <pax-busy-indicator color="light"/>
+        </pax-col>
+        <pax-col col-md-3>
+          <pax-busy-indicator hidden/>
+        </pax-col>
+        <pax-col col-md-3>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

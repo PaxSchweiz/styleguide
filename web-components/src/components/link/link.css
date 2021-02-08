@@ -1,0 +1,81 @@
+a {
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-regular);
+  font-size: 1rem;
+  line-height: 1.375em;
+  color: var(--color-prune);
+  text-decoration: none;
+  appearance: none;
+  outline: none;
+}
+
+span.disabled {
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-regular);
+  font-size: 1rem;
+  line-height: 1.375em;
+  color: var(--color-gris45);
+}
+
+a:not(.disabled):hover,
+a:not(.disabled):focus {
+  color: var(--color-vert);
+}
+
+a.muted {
+  color: var(--color-gris77);
+}
+
+a.emphasized {
+  color: var(--color-vert);
+  text-decoration: underline;
+}
+
+a.emphasized:hover,
+a.emphasized:focus {
+  color: var(--color-gris);
+}
+
+.icon-chevron {
+  width: 0.375em; /* 6px */
+  height: 0.5625em; /* 9px */
+  margin-right: 0.3125em; /* 5px */
+  fill: currentColor;
+  vertical-align: baseline;
+}
+
+
+/* WITHIN PAGINATION COMPOSITION -------------------------------------------- */
+
+
+a.in-pagination svg {
+  display: none;
+}
+
+a.in-pagination.emphasized {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.in-pagination.emphasized:hover,
+a.in-pagination.emphasized:focus {
+  color: var(--color-vert);
+  cursor: default;
+}
+
+a.in-pagination,
+span.in-pagination {
+  padding: 4px 10px;
+  display: inline-block;
+}
+
+
+/* WITHIN TOOLTIP COMPOSITION ----------------------------------------------- */
+
+
+a.in-tooltip {
+  font-size: 12px;
+  line-height: 1.3333333333em;
+  color: var(--color-noir);
+  white-space: normal;
+}

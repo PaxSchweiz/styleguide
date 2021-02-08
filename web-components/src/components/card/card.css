@@ -1,0 +1,44 @@
+:host {
+  box-sizing: border-box !important; /* set this to important because of common box-sizing selector `*, *:before, *:after` in the global scope */
+  background-color: var(--color-white);
+  border: 1px solid var(--color-white);
+  display: block;
+  padding: 1.875rem;
+}
+
+:host(.pax-color--success) {
+  border-color: var(--color-vert);
+}
+
+:host(.pax-color--warning) {
+  border-color: var(--color-orange);
+}
+
+:host(.pax-color--danger) {
+  border-color: var(--color-rouge85);
+}
+
+:host(.pax-color--dark) {
+  border-color: var(--color-prune);
+}
+
+:host(.pax-color--light) {
+  border-color: var(--color-gris20);
+}
+
+:host(.has-header) {
+  padding-top: 1.4375rem;
+}
+
+.header {
+  font-family: var(--font-family-myriad-pro);
+  font-weight: var(--font-weight-light);
+  font-size: 28px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+::slotted(:last-child) {
+  margin-bottom: 0;
+}

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Input - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-grid>
+      <pax-row>
+        <pax-col>
+          <pax-headline>Input - Basic</pax-headline>
+        </pax-col>
+      </pax-row>
+      <pax-row>
+        <pax-col col-md-6 col-lg-3>
+          <pax-grid>
+            <pax-row>
+              <pax-col>
+                <pax-headline level="3">Type "text"</pax-headline>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input value="With value"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input value="With value, truncated, therefore we need a longer value"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input disabled/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input disabled value="Disabled with value"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input readonly/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input readonly value="Readonly with value"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input invalid/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input invalid value="Invalid with value"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input invalid error="Error message"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input invalid error="Error message" value="Invalid with value and error message"/>
+              </pax-col>
+            </pax-row>
+          </pax-grid>
+        </pax-col>
+        <pax-col col-md-6 col-lg-3>
+          <pax-grid>
+            <pax-row>
+              <pax-col>
+                <pax-headline level="3">Type "password"</pax-headline>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="password"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="password" value="123456"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="password" value="blusende94)Polyfoniefaktisches39}Frachtenausschuuussie"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="password" disabled/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="password" disabled value="123456"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="password" readonly/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="password" readonly value="123456"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="password" invalid/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="password" invalid value="Invalid with error message"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="password" invalid error="Error message"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="password" invalid error="Error message" value="Invalid with error message"/>
+              </pax-col>
+            </pax-row>
+          </pax-grid>
+        </pax-col>
+        <pax-col col-md-6 col-lg-3>
+          <pax-grid>
+            <pax-row>
+              <pax-col>
+                <pax-headline level="3">Type "email"</pax-headline>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="email"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="email" value="info@example.org"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="email" value="informationsanfragen@example.org"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="email" disabled/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="email" disabled value="info@example.org"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="email" readonly/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="email" readonly value="info@example.org"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="email" invalid/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="email" invalid value="Invalid with error message"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="email" invalid error="Error message"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="email" invalid error="Error message" value="Invalid with error message"/>
+              </pax-col>
+            </pax-row>
+          </pax-grid>
+        </pax-col>
+        <pax-col col-md-6 col-lg-3>
+          <pax-grid>
+            <pax-row>
+              <pax-col>
+                <pax-headline level="3">Type "number"</pax-headline>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="number"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="number" value="123456"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="number" value="1234567890123456789012345678"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="number" disabled/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="number" disabled value="123456"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="number" readonly/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="number" readonly value="123456"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="number" invalid/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="number" invalid value="Invalid with error message"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="number" invalid error="Error message"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="number" invalid error="Error message" value="Invalid with error message"/>
+              </pax-col>
+            </pax-row>
+          </pax-grid>
+        </pax-col>
+      </pax-row>
+      </pax-row>
+      <pax-row>
+        <pax-col col-md-6 col-lg-3>
+          <pax-grid>
+            <pax-row>
+              <pax-col>
+                <pax-headline level="3">Type "search"</pax-headline>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="search"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="search" value="search term"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="search" value="With search term, truncated, therefore we need a longer value"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="search" disabled/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="search" disabled value="search term"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="search" readonly/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="search" readonly value="search term"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="search" invalid/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="search" invalid value="Invalid with error message"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="search" invalid error="Error message"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="search" invalid error="Error message" value="Invalid with error message"/>
+              </pax-col>
+            </pax-row>
+          </pax-grid>
+        </pax-col>
+        <pax-col col-md-6 col-lg-3>
+          <pax-grid>
+            <pax-row>
+              <pax-col>
+                <pax-headline level="3">Type "tel"</pax-headline>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="tel"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="tel" value="1234-567890"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="tel" value="1234-567890"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="tel" disabled/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="tel" disabled value="1234-567890"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="tel" readonly/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="tel" readonly value="1234-567890"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="tel" invalid/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="tel" invalid value="Invalid with error message"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="tel" invalid error="Error message"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="tel" invalid error="Error message" value="Invalid with error message"/>
+              </pax-col>
+            </pax-row>
+          </pax-grid>
+        </pax-col>
+        <pax-col col-md-6 col-lg-3>
+          <pax-grid>
+            <pax-row>
+              <pax-col>
+                <pax-headline level="3">Type "url"</pax-headline>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="url"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="url" value="https://www.pax.ch/"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="url" value="https://www.averylongwebsiteurl.ch/"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="url" disabled/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="url" disabled value="https://www.pax.ch/"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="url" readonly/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="url" readonly value="https://www.pax.ch/"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="url" invalid/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="url" invalid value="Invalid with error message"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="url" invalid error="Error message"/>
+              </pax-col>
+            </pax-row>
+            <pax-row>
+              <pax-col>
+                <pax-input type="url" invalid error="Error message" value="Invalid with error message"/>
+              </pax-col>
+            </pax-row>
+          </pax-grid>
+        </pax-col>
+        <pax-col col-md-6 col-lg-3>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>

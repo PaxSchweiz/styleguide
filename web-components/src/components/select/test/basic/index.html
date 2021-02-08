@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Select - Basic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://use.typekit.net/ydt8vux.css" rel="stylesheet"><!-- load web fonts from https://fonts.adobe.com -->
+    <link href="../../../../../dist/pax/pax.css" rel="stylesheet">
+    <script nomodule src="../../../../../dist/pax.js"></script>
+    <script type="module" src="../../../../../dist/pax/pax.esm.js"></script>
+  </head>
+
+  <body>
+    <pax-headline level="1">Select - Basic</pax-headline>
+    <pax-grid>
+      <pax-row>
+        <pax-col col-md-6 col-lg-3>
+          <pax-headline level="3">Default</pax-headline>
+          <pax-select>
+            <pax-select-option value="1">Option 1</pax-select-option>
+            <pax-select-option value="2">Option 2</pax-select-option>
+            <pax-select-option value="3">Option 3</pax-select-option>
+          </pax-select>
+          <p>disabled:</p>
+          <pax-select disabled>
+            <pax-select-option value="1">Option 1</pax-select-option>
+            <pax-select-option value="2">Option 2</pax-select-option>
+            <pax-select-option value="3">Option 3</pax-select-option>
+          </pax-select>
+          <p>readonly:</p>
+          <pax-select readonly>
+            <pax-select-option value="1" selected>Option 1</pax-select-option>
+            <pax-select-option value="2">Option 2</pax-select-option>
+            <pax-select-option value="3">Option 3</pax-select-option>
+          </pax-select>
+          <p>with custom name:</p>
+          <pax-select name="foo">
+            <pax-select-option value="1">Option 1</pax-select-option>
+            <pax-select-option value="2">Option 2</pax-select-option>
+            <pax-select-option value="3">Option 3</pax-select-option>
+          </pax-select>
+          <p>with selected option (prefilled):</p>
+          <pax-select>
+            <pax-select-option value="1">Option 1</pax-select-option>
+            <pax-select-option value="2">Option 2</pax-select-option>
+            <pax-select-option value="3" selected>Option 3</pax-select-option>
+          </pax-select>
+          <p>with abbreviation:</p>
+          <pax-select>
+            <pax-select-option value="1" abbreviation="1">Option 1</pax-select-option>
+            <pax-select-option value="2" abbreviation="2">Option 2</pax-select-option>
+            <pax-select-option value="3" abbreviation="3" selected>Option 3</pax-select-option>
+          </pax-select>
+          <p>with option with very long text:</p>
+          <pax-select>
+            <pax-select-option value="1" abbreviation="1">Option 1</pax-select-option>
+            <pax-select-option value="2" abbreviation="22">Option 2</pax-select-option>
+            <pax-select-option value="3" abbreviation="333">Option 3 has a very long description, so long that is needs to wrap</pax-select-option>
+          </pax-select>
+          <p>with selected option with very long text:</p>
+          <pax-select>
+            <pax-select-option value="1" abbreviation="1">Option 1</pax-select-option>
+            <pax-select-option value="2" abbreviation="22">Option 2</pax-select-option>
+            <pax-select-option value="3" abbreviation="333" selected>Option 3 has a very long description, so long that is needs to wrap</pax-select-option>
+          </pax-select>
+          <p>with a lot of selected options:</p>
+          <pax-select>
+            <pax-select-option value="1">Option 1</pax-select-option>
+            <pax-select-option value="2">Option 2</pax-select-option>
+            <pax-select-option value="3">Option 3</pax-select-option>
+            <pax-select-option value="4">Option 4</pax-select-option>
+            <pax-select-option value="5">Option 5</pax-select-option>
+            <pax-select-option value="6">Option 6</pax-select-option>
+            <pax-select-option value="7">Option 7</pax-select-option>
+            <pax-select-option value="8">Option 8</pax-select-option>
+            <pax-select-option value="9">Option 9</pax-select-option>
+            <pax-select-option value="10">Option 10</pax-select-option>
+            <pax-select-option value="11">Option 11</pax-select-option>
+            <pax-select-option value="12">Option 12</pax-select-option>
+            <pax-select-option value="13">Option 13</pax-select-option>
+            <pax-select-option value="14">Option 14</pax-select-option>
+            <pax-select-option value="15">Option 15</pax-select-option>
+            <pax-select-option value="16">Option 16</pax-select-option>
+            <pax-select-option value="17">Option 17</pax-select-option>
+            <pax-select-option value="18">Option 18</pax-select-option>
+            <pax-select-option value="19">Option 19</pax-select-option>
+            <pax-select-option value="20">Option 20</pax-select-option>
+            <pax-select-option value="21">Option 21</pax-select-option>
+            <pax-select-option value="22">Option 22</pax-select-option>
+            <pax-select-option value="23">Option 23</pax-select-option>
+            <pax-select-option value="24">Option 24</pax-select-option>
+            <pax-select-option value="25">Option 25</pax-select-option>
+            <pax-select-option value="26">Option 26</pax-select-option>
+            <pax-select-option value="27">Option 27</pax-select-option>
+            <pax-select-option value="28">Option 28</pax-select-option>
+            <pax-select-option value="29">Option 29</pax-select-option>
+          </pax-select>
+          <p>invalid:</p>
+          <pax-select invalid>
+            <pax-select-option value="1">Option 1</pax-select-option>
+            <pax-select-option value="2">Option 2</pax-select-option>
+            <pax-select-option value="3">Option 3</pax-select-option>
+          </pax-select>
+          <p>invalid with value:</p>
+          <pax-select invalid>
+            <pax-select-option value="1">Option 1</pax-select-option>
+            <pax-select-option value="2" selected>Option 2</pax-select-option>
+            <pax-select-option value="3">Option 3</pax-select-option>
+          </pax-select>
+          <p>invalid with error message:</p>
+          <pax-select invalid error="Error message">
+            <pax-select-option value="1">Option 1</pax-select-option>
+            <pax-select-option value="2">Option 2</pax-select-option>
+            <pax-select-option value="3">Option 3</pax-select-option>
+          </pax-select>
+          <p>invalid with value and with error message:</p>
+          <pax-select invalid error="Error message">
+            <pax-select-option value="1">Option 1</pax-select-option>
+            <pax-select-option value="2" selected>Option 2</pax-select-option>
+            <pax-select-option value="3">Option 3</pax-select-option>
+          </pax-select>
+        </pax-col>
+      </pax-row>
+    </pax-grid>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        console.log('take_screenshot');
+      });
+    </script>
+
+  </body>
+
+</html>
