@@ -1,0 +1,2 @@
+# ignore all mdx files as they are copied from the stencil source folder
+*.mdx

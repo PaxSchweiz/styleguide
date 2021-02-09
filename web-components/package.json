@@ -19,7 +19,8 @@
   "scripts": {
     "build": "stencil build --docs",
     "clean": "node scripts/clean.js",
-    "export.docs": "npm run build && node scripts/copy-dist.js",
+    "copy-md": "./scripts/copy-doc.sh",
+    "export.docs": "npm run build && node scripts/copy-dist.js && npm run copy-md",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",

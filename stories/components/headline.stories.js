@@ -1,4 +1,4 @@
-import mdx from './badge.mdx';
+import mdx from './headline.mdx';
 
 export default {
   component: 'pax-headline',

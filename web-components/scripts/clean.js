@@ -3,7 +3,7 @@ const path = require('path');
 
 const cleanDirs = [
   'dist',
-  '../docs/static/docs'
+  'loader'
 ];
 
 cleanDirs.forEach(dir => {

@@ -1,4 +1,4 @@
-import mdx from './badge.mdx';
+import mdx from './button.mdx';
 
 export default {
   component: 'pax-button',
@@ -32,7 +32,6 @@ const Template = ({ mode, fill }) => {
 };
 
 export const Button = Template.bind({});
-Button.args = { mode: 'light', fill: 'clear' };
 Button.parameters = {
   actions: {
     handles: ['click', 'contextmenu', { clearOnStoryChange: false }],
