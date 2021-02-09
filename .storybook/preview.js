@@ -2,6 +2,14 @@ import { addParameters } from '@storybook/html';
 
 const SOURCE_REGEX = /^\(\) => [`'"](.*)['`"]$/;
 
+export const parameters = {
+  options: {
+    storySort: {
+      order: ['Welcome', 'Usage', 'Branding', 'Components'],
+    },
+  },
+};
+
 addParameters({
   a11y: {
     config: {},
