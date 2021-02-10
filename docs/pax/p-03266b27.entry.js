@@ -1,0 +1,1 @@
+import{r as t,h as r,H as s}from"./p-192d9b7e.js";const o=class{constructor(r){t(this,r)}render(){return r(s,{class:"row"},r("slot",null))}};o.style=":host{box-sizing:border-box !important;display:flex;flex-wrap:wrap;justify-content:space-between;width:100%}:host(:not(:first-child)){padding-top:4rem}";export{o as pax_row}

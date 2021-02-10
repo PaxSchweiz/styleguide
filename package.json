@@ -16,7 +16,7 @@
     "css-var-build": "sass /assets/pax.scss css/pax.css",
     "css-var-build-min": "sass ../generic/pax.scss css/pax.min.css --style=compressed",
     "serve": "light-server -s storybook-static",
-    "build-storybook": "build-storybook -s static -o distribution",
+    "build-storybook": "build-storybook -s static -o docs",
     "storybook": "start-storybook -s static -p 9006"
   },
   "devDependencies": {

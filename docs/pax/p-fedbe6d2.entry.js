@@ -1,0 +1,1 @@
+import{r as s,h as t,H as o}from"./p-192d9b7e.js";const r=class{constructor(t){s(this,t),this.selected=!1,this.disabled=!1}render(){return t(o,{role:"option"})}};r.style="";export{r as pax_select_option}

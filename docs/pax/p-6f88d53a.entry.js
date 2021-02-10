@@ -1,0 +1,1 @@
+import{r,h as t,H as o}from"./p-192d9b7e.js";const i=class{constructor(t){r(this,t)}render(){return t(o,null,t("slot",null))}};i.style=":host{box-sizing:border-box !important;margin-left:auto;margin-right:auto;width:100%;display:flex;flex-direction:column}";export{i as pax_grid}

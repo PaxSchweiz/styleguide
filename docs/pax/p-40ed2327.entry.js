@@ -1,0 +1,1 @@
+import{r as s,h as t,H as r}from"./p-192d9b7e.js";const o=class{constructor(t){s(this,t)}render(){return t(r,{class:"swiper-slide"},t("slot",null))}};o.style=":host{display:block}::slotted(img){width:100%}";export{o as pax_carousel_item}
