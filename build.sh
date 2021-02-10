@@ -13,8 +13,8 @@
 # clean up distribution
 npm install
 npm run clean
-mkdir -p static/pax
-cp -r assets/ static/
+mkdir -p static/styleguide/pax
+cp -r assets/ static/styleguide
 
 # build static stylesheet and generic CSS generation
 

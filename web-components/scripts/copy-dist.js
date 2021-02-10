@@ -7,7 +7,7 @@ const copyDirs = [
   '../dist/pax'
 ];
 
-const destDir = path.join(__dirname, '../../static/pax/');
+const destDir = path.join(__dirname, '../../static/styleguide/pax/');
 
 copyDirs.forEach(dir => {
   const copyDir = path.join(__dirname, dir);
