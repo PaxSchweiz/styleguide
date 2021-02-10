@@ -11,13 +11,13 @@ export default {
   argTypes: {
     header: {
       name: 'Header of card',
+      defaultValue: 'Hello',
       control: {
-        type: 'string'
+        type: 'text'
       }
     },
     border: {
       name: 'Border of card',
-      description: 'Define the border color of the card',
       control: {
         type: 'select',
         options:  ['success', 'warning', 'danger', 'dark', 'light', 'ghost']

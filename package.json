@@ -12,9 +12,12 @@
   ],
   "main": "index.js",
   "scripts": {
-    "build-storybook": "build-storybook",
     "clean": "rimraf storybook-static static stories/components/*.mdx",
-    "storybook": "start-storybook -s ./static -p 9006"
+    "css-var-build": "sass /assets/pax.scss css/pax.css",
+    "css-var-build-min": "sass ../generic/pax.scss css/pax.min.css --style=compressed",
+    "serve": "light-server -s storybook-static",
+    "build-storybook": "build-storybook -s static -o distribution",
+    "storybook": "start-storybook -s static -p 9006"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "6.2.0-alpha.24",
@@ -38,6 +41,9 @@
     "eventemitter3": "^4.0.7",
     "format-json": "^1.0.3",
     "global": "^4.4.0",
-    "rimraf": "^3.0.2"
-  }
+    "light-server": "^2.9.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.7"
+  },
+  "dependencies": {}
 }

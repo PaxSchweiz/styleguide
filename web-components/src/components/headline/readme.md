@@ -4,21 +4,6 @@ Headline is a wrapper element for headlines from level 1 to 6.
 
 * Without a `level` attribute a `<h2>` headline is rendered.
 
-<div class="browser">
-    <div class="browser-toolbar">
-        <div class="browser-dot"></div>
-        <div class="browser-dot"></div>
-        <div class="browser-dot"></div>
-    </div>
-    <div class="browser-body">
-        <pax-headline level="1">Pax Headline (h1)</pax-headline>
-        <pax-headline level="2">Pax Headline (h2)</pax-headline>
-        <pax-headline level="3">Pax Headline (h3)</pax-headline>
-        <pax-headline level="4">Pax Headline (h4)</pax-headline>
-        <pax-headline level="5">Pax Headline (h5)</pax-headline>
-        <pax-headline level="6">Pax Headline (h6)</pax-headline>
-    </div>
-</div>
 
 ## Basic
 

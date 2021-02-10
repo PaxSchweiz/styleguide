@@ -14,6 +14,7 @@
 npm install
 npm run clean
 mkdir -p static/pax
+cp -r assets/ static/
 
 # build static stylesheet and generic CSS generation
 

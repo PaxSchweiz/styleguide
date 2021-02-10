@@ -1,20 +1,5 @@
 # pax-card
 
-<div class="browser">
-    <div class="browser-toolbar">
-        <div class="browser-dot"></div>
-        <div class="browser-dot"></div>
-        <div class="browser-dot"></div>
-    </div>
-    <div class="browser-body" style="background-color: #EFF3F6;">
-        <pax-card>
-        	Just my luck, no ice. Is this my espresso machine? Wh-what is-h-how did
-            you get my espresso machine? I gave it a cold? I gave it a virus. A computer virus. I was part of
-            something special. Must go faster. God help us, we're in the hands of engineers.
-        </pax-card>
-    </div>
-</div>
-
 ## Basic
 
 <pax-card>
