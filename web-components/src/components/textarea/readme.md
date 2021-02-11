@@ -11,8 +11,6 @@ The `pax-textarea` is a wrapper to the HTML textarea element.
 
 ## Usage
 
-## Usage
-
 <pax-grid>
     <pax-row>
         <pax-col>

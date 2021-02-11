@@ -13,11 +13,12 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf storybook-static static stories/components/*.mdx",
-    "css-var-build": "sass /assets/pax.scss css/pax.css",
-    "css-var-build-min": "sass ../generic/pax.scss css/pax.min.css --style=compressed",
-    "serve": "light-server -s storybook-static",
-    "build-storybook": "build-storybook -s static -o docs",
-    "storybook": "start-storybook -s static -p 9006"
+    "css-var-build": "sass assets/stylesheet/pax.scss docs/pax.css",
+    "css-var-build-min": "sass assets/stylesheet/pax.scss docs/pax.min.css --style=compressed",
+    "serve": "light-server -s docs",
+    "copystatic": "copyfiles -u 2 static/styleguide/**/* docs/",
+    "build": "build-storybook -o docs && npm run copystatic",
+    "storybook": "start-storybook -s static -p 9006 --no-manager-cache"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "6.2.0-alpha.24",
@@ -38,6 +39,7 @@
     "@storybook/source-loader": "6.2.0-alpha.24",
     "@storybook/theming": "^6.1.17",
     "autoprefixer": "^10.0.1",
+    "copyfiles": "^2.4.1",
     "eventemitter3": "^4.0.7",
     "format-json": "^1.0.3",
     "global": "^4.4.0",

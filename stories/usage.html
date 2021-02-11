@@ -1,26 +1,34 @@
 <div class="main">
-  <pax-title>Usage of Pax components</pax-title>
-  <pax-headline level="3">NPM content delivery</pax-headline>
+  <pax-title>Gebrauch der Pax Komponenten</pax-title>
+  <pax-headline level="3">Nutzung für eine simple HTML Seite</pax-headline>
     <p>
-    Access components via NPM URL without installation - accessible within Pax and Internet. This is using unpkg.com.
-    The main URL for web-components is: <code>https://unpkg.com/@devatpax/web-components@latest/dist/pax</code>. Replace
-    the version "latest" with the version needed (like "2.1.0") or leave it to get the latest.
+        Die einfachste Nutzung erfolgt über ein Content Delivery Network (CDN) und benötigt keine lokale Installation.
+        Für diese Komponenten steht folgendes CDN zu Verfügung: <code>https://unpkg.com/@devatpax/web-components@latest/dist/pax</code>. Replace
+        Mit "latest" ist die aktuellste Version referenziert. Für eine simple HTML Seite kann folgender HTML code im "head" eingefügt werden
+        und danach können die Komponenten angewandt werden.
     </p>
+    <pax-message-strip icon="info">
 <pre><code class="html">&lt;!-- BEGIN_WEBCOMPONENTS include web components --&gt;
 &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,900&display=swap"&gt;
 &lt;script type="module" src="https://unpkg.com/@devatpax/web-components@latest/dist/pax/pax.esm.js"&gt;&lt;/script&gt;
 &lt;script nomodule src="https://unpkg.com/@devatpax/web-components@latest/dist/pax/pax.js"&gt;&lt;/script&gt;
 &lt;link rel="stylesheet" type="text/css" href="https://unpkg.com/@devatpax/web-components@latest/dist/pax/pax.css"&gt;
 &lt;!-- END_OF_WEBCOMPONENTS --&gt;</code></pre>
+    </pax-message-strip>
     <p>
-    Use with local installation using npm. Add the npm package to your own project using
-    <code>npm i --save @devatpax/web-components</code>. The "--save" adds the dependency to your existing
-    nodejs project (only if the file package.json is available)
+        Für Entwicklungen können die Komponenten auch via dem Node Package Manager (NPM) lokal installiert werden und anstelle
+        über das CDN lokal genutzt werden. Die Installation erfolgt über: <code>npm i --save @devatpax/web-components</code>.
     </p>
+<pax-message-strip icon="info">
 <pre><code class="html">&lt;!-- BEGIN_WEBCOMPONENTS include web components --&gt;
 &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,900&display=swap"&gt;
 &lt;script type="module" src="node_modules/@devatpax/web-components/pax.esm.js"&gt;&lt;/script&gt;
 &lt;script nomodule src="node_modules/@devatpax/web-components/pax.js"&gt;&lt;/script&gt;
 &lt;link rel="stylesheet" type="text/css" href="node_modules/@devatpax/web-components/pax.css"&gt;
 &lt;!-- END_OF_WEBCOMPONENTS --&gt;</code></pre>
+</pax-message-strip>
 </div>
+  <p>Im weiteren kann auch dieses ganze Storybook und der Quellcode für die web-components direkt von GitHub.com geladen
+      und lokal weiterverwendet werden.</p>
+  <pax-link emphasized href="https://github.com/PaxSchweiz/styleguide">Quellcode und digitale Assets auf GitHub.com</pax-link>
+

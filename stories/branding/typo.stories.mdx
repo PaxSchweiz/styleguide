@@ -1,17 +1,28 @@
 import {
   Meta,
   Typeset,
+    ColorItem,
+    ColorPalette
 } from "@storybook/addon-docs/blocks";
+import { color } from './pax-variables';
 
 <Meta title="Branding/Typo" />
 
 # Typography
 
-Google's Source Sans Pro font.
+[Google's Source Sans Pro font](https://fonts.google.com/specimen/Source+Sans+Pro?preview.text=PAX.+VORSORGE+AUF+DEN+PUNKT+GEBRACHT&preview.text_type=custom#standard-styles)
 
 **Font**: Google Source+Sans+Pro
 **Weight**: 400
 
 <Typeset fontFamily="Source+Sans+Pro" fontSizes={[10, 20, 30, 40, 50]} fontWeight={400} sampleText="Vorsorge auf den Punkt gebracht" />
 
-https://fonts.google.com/specimen/Source+Sans+Pro?preview.text=PAX.+VORSORGE+AUF+DEN+PUNKT+GEBRACHT&preview.text_type=custom#standard-styles
+## Schriftfarben
+
+<ColorPalette>
+  <ColorItem title="Pax Vert" subtitle="pax_white" colors={[color.pax_white]} />
+  <ColorItem title="Pax Gris 45" subtitle="pax_gris45" colors={[color.pax_gris45]} />
+  <ColorItem title="Pax Gris 77" subtitle="pax_gris45" colors={[color.pax_gris77]} />
+  <ColorItem title="Pax Orange" subtitle="pax_orange" colors={[color.pax_orange]} />
+  <ColorItem title="Pax Prune" subtitle="pax_prune" colors={[color.pax_prune]} />
+</ColorPalette>

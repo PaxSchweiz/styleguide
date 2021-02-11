@@ -4,18 +4,20 @@
 //
 //
 
-$pax_white: #FFFFFF;
-$pax_black: #000000;
+$pax_white: rgba(255, 255, 255, 1);
+$pax_black: rgba(0, 0, 0, 1);
 
 // main Pax colors
 $pax_prune: rgba(59, 58, 83, 1);       // #3B3A53
+$pax_claire: rgba(239, 243, 246, 1);   // #EFF3F6
+
 $pax_prunenoir: rgba(34, 40, 60, 1);        // #22283C
 $pax_vert: rgba(140, 205, 15, 1);      // #8CCD0F
-$pax_vertfonce: rgb(127, 182, 44);    // #7FB62C also called vert-hover, dark green
+$pax_vertfonce: rgb(127, 182, 44);
+$pax_vertnoir: rgb(125,184,14);
 $pax_orange: rgba(246, 168, 0, 1);     // #F6A800
-$pax_aubergine: #532a42;
-$pax_marron: #52413e;
-$pax_claire: rgba(239, 243, 246, 1);   // #EFF3F6
+$pax_aubergine: rgba(83, 42, 66, 1);
+$pax_marron: rgba(82, 65, 62, 1);
 
 // gris
 $pax_gris20: rgba(217, 218, 219, 1);   // #D9DADB
@@ -26,30 +28,15 @@ $pax_gris77: rgba(98, 98, 98, 1);      // #626262 */
 $pax_gris: rgba(59, 59, 59, 1);        // #3B3B3B */
 
 // bleu
-$pax_bleu40: #009bc8;
-$pax_bleu55: #0582b4;
-$pax_bleu70: #0a696a;
-$pax_bleu85: #12558c;
-$pax_bleu100: #144178;
+$pax_bleu40: rgba(0, 155, 200,1);
+$pax_bleu55: rgba(5, 130, 180,1);
+$pax_bleu70: rgba(10, 105, 160,1);
+$pax_bleu85: rgba(15, 85, 140,1);
+$pax_bleu100: rgba(20, 65, 120,1);
 
 // rouge
 $pax_rouge40: rgba(255, 135, 120, 1);  // #FF8778 */
-$pax_rouge55: #eb645f;
-$pax_rouge70: #d2464b;
+$pax_rouge55: rgba(235, 100, 95, 1);
+$pax_rouge70: rgba(210, 70, 75, 1);
 $pax_rouge85: rgba(185, 45, 60, 1);    // #B92D3C */
 $pax_rouge100: rgba(160, 20, 50, 1);      // #A01432 */
-
-//
-// Color Issues
-//
-// $pax_prunenoir: #1f2539;
-// $pax_darkgreen: #7db80e;
-// color-vert10: rgba(243, 250, 230, 1);   /* #F3FAE6 */
-// color-gris5: rgba(238, 238, 238, 1);    /* #EEEEEE */
-// color-gris10: rgba(237, 237, 237, 1);   /* #EDEDED */
-// color-gris15: rgba(227, 227, 227, 1);   /* #E3E3E3 */
-// color-gris: rgba(59, 59, 59, 1);        /* #3B3B3B */
-// color-orange10: rgba(253, 239, 209, 1); /* #FDEFD1 */
-// color-red-2: rgba(200, 32, 59, 1);      /* #C8203B */
-// color-rouge10: rgba(245, 231, 234, 1);  /* #F5E7EA */
-// color-white20: rgba(98, 97, 117, 1);    /* #626175 */

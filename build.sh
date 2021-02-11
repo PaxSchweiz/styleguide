@@ -26,8 +26,7 @@ npm run export.docs
 #tar cf - dist | (cd ../distribution;tar xf -)
 cd ..
 
-npm run build-storybook
-mv docs/styleguide/* docs/
+npm run build
 
 # create a distribution file
 #tar cvfz dist.tgz distribution/

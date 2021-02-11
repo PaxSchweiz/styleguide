@@ -4,21 +4,64 @@ import {
   ColorItem,
   Typeset,
 } from "@storybook/addon-docs/blocks";
+import { color } from './pax-variables';
 
 <Meta title="Branding/Colors" />
 
-# Colors
+# Farben
 
-Color palette of Pax Styleguide.
+Die Farbpaletten stehen als
+[CSS](https://github.com/PaxSchweiz/styleguide/blob/main/assets/stylesheet/pax-variables.scss),
+[SCSS](https://github.com/PaxSchweiz/styleguide/blob/main/assets/stylesheet/pax-variables.scss)
+und als [Typescript Objekt](https://github.com/PaxSchweiz/styleguide/tree/main/stories/branding/pax-variables.ts)
+zur Verfügung.
 
-## Colours
+## Flächenfarben
 
-### Light Theme
+Die Primärfarben prägen den visuellen Firmenauftritt von Pax. Die neutralen Farben Prune und Claire
+stehen als solide Basis im Kontrast zu den Highlightfarben.
 
 <ColorPalette>
-  <ColorItem
-    title="theme.color.background"
-    subtitle="Prune"
-    colors={['#3b3a53']}
-  />
+  <ColorItem title="Pax Prune" subtitle="pax_prune" colors={[color.pax_prune]} />
+  <ColorItem title="Pax Claire" subtitle="pax_claire" colors={[color.pax_claire]} />
+  <ColorItem title="Pax Prune Noir" subtitle="pax_prunenoir" colors={[color.pax_prunenoir]} />
+</ColorPalette>
+
+## Linienfarben
+
+<ColorPalette>
+  <ColorItem title="Pax Weiss" subtitle="pax_white" colors={[color.pax_white]} />
+  <ColorItem title="Pax Schwarz" subtitle="pax_black" colors={[color.pax_black]} />
+</ColorPalette>
+
+## Schriftfarben
+
+<ColorPalette>
+  <ColorItem title="Pax Weiss" subtitle="pax_white" colors={[color.pax_white]} />
+  <ColorItem title="Pax Gris 45" subtitle="pax_gris45" colors={[color.pax_gris45]} />
+  <ColorItem title="Pax Gris 77" subtitle="pax_gris45" colors={[color.pax_gris77]} />
+  <ColorItem title="Pax Orange" subtitle="pax_orange" colors={[color.pax_orange]} />
+  <ColorItem title="Pax Prune" subtitle="pax_prune" colors={[color.pax_prune]} />
+</ColorPalette>
+
+## Interaktionsfarben
+
+<ColorPalette>
+  <ColorItem title="Pax Vert" subtitle="pax_vert" colors={[color.pax_vert]} />
+  <ColorItem title="Pax Vert Noir" subtitle="pax_vertnoir" colors={[color.pax_vertnoir]} />
+  <ColorItem title="Pax Vert Foncé" subtitle="pax_vertfonce" colors={[color.pax_vertfonce]} />
+</ColorPalette>
+
+## Sekundärfarben
+<ColorPalette>
+  <ColorItem title="Pax Aubergine" subtitle="pax_aubergine" colors={[color.pax_aubergine]} />
+  <ColorItem title="Pax Marron" subtitle="pax_marron" colors={[color.pax_marron]} />
+  <ColorItem title="Pax Gris" subtitle="pax_gris" colors={[color.pax_gris20, color.pax_gris30, color.pax_gris45, color.pax_gris60, color.pax_gris77, color.pax_gris]} />
+</ColorPalette>
+
+## Tertiärfarben
+
+<ColorPalette>
+  <ColorItem title="Pax Bleu" subtitle="pax_bleu" colors={[color.pax_bleu40, color.pax_bleu55, color.pax_bleu70, color.pax_bleu85, color.pax_bleu100]} />
+  <ColorItem title="Pax Rouge" subtitle="pax_rouge" colors={[color.pax_rouge40, color.pax_rouge55, color.pax_rouge70, color.pax_rouge85, color.pax_rouge100]} />
 </ColorPalette>

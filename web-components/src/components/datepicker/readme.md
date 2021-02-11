@@ -22,7 +22,7 @@ The `pax-datepicker` is a wrapper to the input HTML element. It displays a picke
 
 ### with hidden input
 
-<pax-datepicker name=name-of-hidden-input></pax-datepicker>
+<pax-datepicker name="name-of-hidden-input"></pax-datepicker>
 
 ```html
 <pax-datepicker name="name-of-hidden-input"></pax-datepicker>

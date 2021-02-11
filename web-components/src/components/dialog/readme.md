@@ -9,29 +9,6 @@ The `pax-dialog` appears on top of the page's content and must be dismissed. It 
 
 ## Usage
 
-<div class="browser">
-    <div class="browser-toolbar">
-        <div class="browser-dot"></div>
-        <div class="browser-dot"></div>
-        <div class="browser-dot"></div>
-    </div>
-    <div class="browser-body">
-        <pax-button id="open-dialog" onClick={document.getElementById('dialog').open()}>Open dialog</pax-button>
-        <pax-dialog id="dialog" header="Dialog header">
-            <p>Just my luck, no ice. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? I gave it a cold? I gave it a virus. A computer virus. I was part of something special. Must go faster. God help us, we're in the hands of engineers.</p>
-            <div slot="footer">
-                <pax-button fill="clear" onClick={document.getElementById('dialog').close()}>Cancel</pax-button>
-                <pax-button onClick={document.getElementById('dialog').close()}>Ok</pax-button>
-            </div>
-        </pax-dialog>
-    </div>
-</div>
-
-<pax-message-strip icon="info">Use the methods `open` and `close` to open or close a dialog.</pax-message-strip>
-
-<pax-panel>
-  <div slot="header">Code</div>
-
 ```html
 <pax-button id="open-dialog">Open dialog</pax-button>
 <pax-dialog id="dialog" header="Dialog header">
@@ -60,8 +37,6 @@ The `pax-dialog` appears on top of the page's content and must be dismissed. It 
     });
 </script>
 ```
-
-</pax-panel>
 
 ## Basic
 
