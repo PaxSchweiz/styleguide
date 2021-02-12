@@ -17,14 +17,6 @@ associated input label within forms – with `pax-input`, `pax-select`, `pax-che
 <pax-label>Lorem ipsum</pax-label>
 ````
 
-### Wrapping
-
-<pax-label wrap style="width: 240px;">Lorem ipsum lorem ipsum lorem ipsum</pax-label>
-
-```html
-<pax-label wrap>Lorem ipsum lorem ipsum lorem ipsum</pax-label>
-````
-
 ## Within a form
 
 ### Default
