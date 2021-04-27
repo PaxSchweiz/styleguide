@@ -13,22 +13,22 @@ $pax_claire: #eff3f6;
 
 $pax_prunenoir: #1f2539;
 $pax_vert: #8ccd0f;
-$pax_vertfonce: rgb(127, 182, 44);
-$pax_vertnoir: rgb(125,184,14);
+$pax_vertfonce: rgb(127, 182, 44); // TODO: Does NOT EXIST IN PAX CD
+$pax_vertnoir: rgb(125,184,14); // TODO: Does NOT EXIST IN PAX CD
 $pax_orange: #f6a800;
 $pax_aubergine: #532a42;
 $pax_marron: #52413e;
-$pax_indigo: #526bc7;
-$pax_limon: #d8c925;
-$pax_tango: #ef7c25;
+$pax_indigo: #526bc7; // ADDED IN VIU WEB PROJECT AS NEW ACCENT COLOR
+$pax_limon: #d8c925; // ADDED IN VIU WEB PROJECT NEW ACCENT COLOR
+$pax_tango: #ef7c25; // ADDED IN VIU WEB PROJECT AS NEW ACCENT COLOR
 
 // gris
-$pax_gris20: rgba(217, 218, 219, 1);   // #D9DADB
-$pax_gris30: rgba(198, 198, 198, 1);   // #C6C6C6 */
-$pax_gris45: rgba(173, 173, 173, 1);   // #ADADAD */
+$pax_gris20: #d9dadb;
+$pax_gris30: #c6c6c6;
+$pax_gris45: #adadad;
 $pax_gris60: #878787;
-$pax_gris77: rgba(98, 98, 98, 1);      // #626262 */
-$pax_gris: rgba(59, 59, 59, 1);        // #3B3B3B */
+$pax_gris77: #626262;
+$pax_gris: rgba(59, 59, 59, 1); // TODO: Does NOT EXIST IN PAX CD
 $pax_mist: #f5f5f5;
 $pax_gray1: #8c8c8c;
 $pax_gray2: #8d8d8f;
@@ -37,17 +37,17 @@ $pax_gray4: #717a84;
 
 // bleu
 $pax_bleu40: #009bc8;
-$pax_bleu55: rgba(5, 130, 180,1);
-$pax_bleu70: rgba(10, 105, 160,1);
-$pax_bleu85: rgba(15, 85, 140,1);
+$pax_bleu55: #0582b4;
+$pax_bleu70: #0a696a;
+$pax_bleu85: #12558c;
 $pax_bleu100: #144178;
 
 // rouge
-$pax_rouge40: rgba(255, 135, 120, 1);  // #FF8778 */
+$pax_rouge40: #ff8778;
 $pax_rouge55: #eb645f;
-$pax_rouge70: rgba(210, 70, 75, 1);
+$pax_rouge70: #d2464b;
 $pax_rouge85: #b92d3c;
-$pax_rouge100: rgba(160, 20, 50, 1);      // #A01432 */
+$pax_rouge100: #a01432;
 
 
 // Shadows
