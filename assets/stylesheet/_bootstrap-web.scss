@@ -1,0 +1,38 @@
+@import 'pax-variables';
+
+// configure bootstrap
+$grid-gutter-width: $pax_layout-gutter-desktop;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px,
+        k1-6: 1600px,
+        k2: 2048px,
+);
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$enable-grid-classes: false;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: $pax_layout-width-max,
+);
+
+
+// Box shadow
+$shadow-xl: rgba(4, 47, 84, 0.2);
+$shadow-lg: rgba(4, 47, 84, 0.12);
+$shadow-md: rgba(4, 47, 84, 0.1);
+$shadow-sm: rgba(4, 47, 84, 0.12);
+$shadow-xs: rgba(0, 0, 0, 0.1);
+
